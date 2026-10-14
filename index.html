@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centre Beauty Souad | Salon de Coiffure & Esthétique à Casablanca</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Centre Beauty Souad à Casablanca (Al Azhar). Soin protéine cheveux, épilation laser, blanchiment dentaire, microblading, microneedling, manucure et soins esthétiques. Prenez RDV sur WhatsApp au 06.60.64.74.61.">
+  <meta name="keywords" content="Centre Beauty Souad, salon de beauté Casablanca, coiffure Casablanca, soin proteine cheveux 300 dh, epilation laser casablanca, blanchiment des dents 200 dh, microblading al azhar casablanca, salon esthetique al azhar">
+  <meta name="author" content="Centre Beauty Souad">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://centre-beauty-souad.vercel.app/">
+  <meta property="og:title" content="Centre Beauty Souad | Salon de Coiffure & Beauté Casablanca">
+  <meta property="og:description" content="Découvrez nos offres exclusives : Soin Protéine à 300 DH avec masque offert, Blanchiment dentaire dès 70 DH, Épilation laser dès 100 DH et soins d'esthétique avancée.">
+  <meta property="og:image" content="assets/images/hero-salon.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons (FontAwesome CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data JSON-LD for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Centre Beauty Souad",
+    "image": "assets/images/hero-salon.jpg",
+    "telephone": "+212660647461",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Al Azhar, Madinati",
+      "addressLocality": "Casablanca",
+      "addressCountry": "MA"
+    },
+    "priceRange": "50 DH - 900 DH",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "20:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="container announcement-content">
+      <span class="announcement-badge"><i class="fa-solid fa-moon"></i> Offres Spéciales</span>
+      <p class="announcement-text">
+        <strong>Soin Protéine à 300 DH</strong> avec Petit Shampoing &amp; Masque OFFERTS ! Blanchiment des Dents 3 séances à 200 DH.
+      </p>
+      <a href="#promos" class="announcement-link">Voir les promos <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <a href="#" class="brand-logo" aria-label="Accueil Centre Beauty Souad">
+        <img src="assets/images/logo.svg" alt="Centre Beauty Souad Casablanca" class="logo-img" width="230" height="52">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+          <li><a href="#promos" class="nav-link highlight-nav"><i class="fa-solid fa-sparkles text-gold"></i> Nos Promos</a></li>
+          <li><a href="#services" class="nav-link">Prestations &amp; Tarifs</a></li>
+          <li><a href="#avant-apres" class="nav-link">Avant / Après</a></li>
+          <li><a href="#calculateur" class="nav-link">Devis Express</a></li>
+          <li><a href="#temoignages" class="nav-link">Avis</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="tel:0660647461" class="btn-phone" aria-label="Appeler le 0660647461">
+          <i class="fa-solid fa-phone"></i>
+          <span class="phone-number">06.60.64.74.61</span>
+        </a>
+        <button class="btn btn-primary open-booking-btn" id="headerBookBtn" data-service="Consultation Générale">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Prendre RDV</span>
+        </button>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Ouvrir le menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/images/logo.svg" alt="Centre Beauty Souad" class="drawer-logo" width="190">
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Fermer le menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="drawer-body">
+      <ul class="drawer-links">
+        <li><a href="#accueil" class="drawer-link"><i class="fa-solid fa-house"></i> Accueil</a></li>
+        <li><a href="#promos" class="drawer-link highlight"><i class="fa-solid fa-gift"></i> Nos Promos Exclusives</a></li>
+        <li><a href="#services" class="drawer-link"><i class="fa-solid fa-list-check"></i> Prestations &amp; Tarifs (DH)</a></li>
+        <li><a href="#avant-apres" class="drawer-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Résultats Avant / Après</a></li>
+        <li><a href="#calculateur" class="drawer-link"><i class="fa-solid fa-calculator"></i> Calculateur de Pack</a></li>
+        <li><a href="#temoignages" class="drawer-link"><i class="fa-solid fa-star"></i> Avis Clientes</a></li>
+        <li><a href="#contact" class="drawer-link"><i class="fa-solid fa-location-dot"></i> Nous Trouver à Casablanca</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <a href="https://wa.me/212660647461?text=Bonjour%20Centre%20Beauty%20Souad,%20je%20souhaite%20prendre%20un%20rendez-vous" target="_blank" rel="noopener" class="btn btn-whatsapp w-full">
+          <i class="fa-brands fa-whatsapp"></i> Discuter sur WhatsApp
+        </a>
+        <a href="tel:0660647461" class="btn btn-outline w-full mt-2">
+          <i class="fa-solid fa-phone"></i> 06.60.64.74.61
+        </a>
+        <p class="drawer-address"><i class="fa-solid fa-map-pin"></i> Al Azhar, Madinati, Casablanca</p>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="accueil">
+      <div class="hero-background">
+        <img src="assets/images/hero-salon.jpg" alt="Intérieur luxueux Centre Beauty Souad Casablanca" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text-block">
+          <div class="hero-tag">
+            <span class="tag-icon"><i class="fa-solid fa-award"></i></span>
+            <span>Salon de Beauté &amp; Centre Esthétique Avancé</span>
+          </div>
+          <h1 class="hero-title">
+            Révélez Votre Éclat &amp; Sublimez Votre Beauté
+          </h1>
+          <p class="hero-description">
+            Bienvenue chez <strong>Centre Beauty Souad</strong> à Casablanca. Découvrez notre expertise en soins capillaires protéine, esthétique médicale douce, blanchiment dentaire et épilation laser dans un cadre raffiné et chaleureux.
+          </p>
+          <div class="hero-cta-group">
+            <button class="btn btn-primary btn-lg open-booking-btn" data-service="Consultation Beauté">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Prendre Rendez-vous</span>
+            </button>
+            <a href="#promos" class="btn btn-glass btn-lg">
+              <i class="fa-solid fa-tags"></i>
+              <span>Voir les Offres Spéciales</span>
+            </a>
+          </div>
+
+          <!-- Quick Trust Badges -->
+          <div class="hero-badges">
+            <div class="badge-item">
+              <i class="fa-solid fa-check-double text-gold"></i>
+              <div>
+                <strong>Tarifs Clairs en DH</strong>
+                <span>Sans frais cachés</span>
+              </div>
+            </div>
+            <div class="badge-item">
+              <i class="fa-solid fa-shield-heart text-gold"></i>
+              <div>
+                <strong>Hygiène &amp; Soin Médical</strong>
+                <span>Protocoles stricts</span>
+              </div>
+            </div>
+            <div class="badge-item">
+              <i class="fa-solid fa-location-dot text-gold"></i>
+              <div>
+                <strong>Al Azhar, Casablanca</strong>
+                <span>Accès facile &amp; parking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Pillars Ribbon -->
+    <section class="pillars-ribbon">
+      <div class="container pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-gem"></i></div>
+          <div class="pillar-text">
+            <h3>Soins Haute Performance</h3>
+            <p>Produits certifiés PKC Protein &amp; technologies dernière génération.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <div class="pillar-text">
+            <h3>Diagnostic Personnalisé</h3>
+            <p>Conseils sur-mesure pour chaque chevelure et type de peau.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="pillar-text">
+            <h3>Expertise &amp; Bienveillance</h3>
+            <p>Une équipe attentive à votre confort et à votre satisfaction.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="pillar-text">
+            <h3>RDV Rapide WhatsApp</h3>
+            <p>Réponse immédiate et créneaux adaptés à votre emploi du temps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOTIONS & OFFRES EXCLUSIVES -->
+    <section class="section section-promos" id="promos">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-sparkles text-gold"></i> OFFRES EXCLUSIVES &amp; PROMOS
+          </div>
+          <h2 class="section-title">Nos Bons Plans du Moment</h2>
+          <p class="section-desc">
+            Profitez de nos offres phares avec des tarifs avantageux et des cadeaux exclusifs pour sublimer vos cheveux, votre peau et votre sourire.
+          </p>
+        </div>
+
+        <div class="promos-grid">
+          <!-- Card 1: Soin Protéine Cheveux -->
+          <article class="promo-card featured-promo" id="promo-proteine">
+            <div class="promo-card-badge">
+              <i class="fa-solid fa-gift"></i> Pack Cadeau Inclus
+            </div>
+            <div class="promo-img-wrapper">
+              <img src="assets/images/protein-after.jpg" alt="Soin Protéine Cheveux Centre Beauty Souad" class="promo-img" loading="lazy">
+              <div class="promo-price-tag">
+                <span class="label">À partir de</span>
+                <span class="price">300 <small>DH</small></span>
+              </div>
+            </div>
+            <div class="promo-card-content">
+              <div class="promo-category"><i class="fa-solid fa-wand-magic-sparkles"></i> Soin Cheveux Signature</div>
+              <h3 class="promo-title">Soin Protéine Cheveux</h3>
+              <p class="promo-tagline">"Pour des cheveux soyeux, lisses et pleins de vie ✨"</p>
+              
+              <div class="promo-gift-box">
+                <div class="gift-icon"><i class="fa-solid fa-box-open"></i></div>
+                <div class="gift-info">
+                  <strong>OFFRE EXCLUSIVE :</strong>
+                  <span>Petit Shampoing &amp; Masque OFFERTS ! (Gamme PKC Ultimate Protein)</span>
+                </div>
+              </div>
+
+              <ul class="promo-features">
+                <li><i class="fa-solid fa-check text-plum"></i> Lissage longue durée et réparation profonde</li>
+                <li><i class="fa-solid fa-check text-plum"></i> Élimination des frisottis &amp; brillance miroir</li>
+                <li><i class="fa-solid fa-check text-plum"></i> Convient à tous types de cheveux</li>
+              </ul>
+
+              <div class="promo-card-footer">
+                <button class="btn btn-primary w-full open-booking-btn" data-service="Soin Protéine Cheveux (dès 300 DH + Shampoing/Masque Offerts)">
+                  <i class="fa-brands fa-whatsapp"></i> Réserver cette Offre (300 DH)
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Blanchiment des Dents -->
+          <article class="promo-card" id="promo-dents">
+            <div class="promo-card-badge badge-cyan">
+              <i class="fa-solid fa-bolt"></i> Offre Flash
+            </div>
+            <div class="promo-img-wrapper">
+              <img src="assets/images/teeth-whitening.jpg" alt="Blanchiment des dents cosmétique Casablanca" class="promo-img" loading="lazy">
+              <div class="promo-price-tag cyan-tag">
+                <span class="label">3 Séances</span>
+                <span class="price">200 <small>DH</small></span>
+                <span class="sub-price">ou 1 séance à 70 DH</span>
+              </div>
+            </div>
+            <div class="promo-card-content">
+              <div class="promo-category"><i class="fa-solid fa-smile-beam"></i> Esthétique Dentaire</div>
+              <h3 class="promo-title">Blanchiment des Dents</h3>
+              <p class="promo-tagline">"Pour un sourire éclatant &amp; confiant ! ✨"</p>
+              
+              <div class="promo-options-table">
+                <div class="option-row">
+                  <span>Formule Découverte (1 Séance)</span>
+                  <strong>70 DH</strong>
+                </div>
+                <div class="option-row highlight-row">
+                  <span>Pack Complet (3 Séances)</span>
+                  <strong>200 DH</strong>
+                </div>
+              </div>
+
+              <ul class="promo-features">
+                <li><i class="fa-solid fa-check text-plum"></i> Éclaircissement doux et sans douleur</li>
+                <li><i class="fa-solid fa-check text-plum"></i> Résultats visibles dès la première séance</li>
+                <li><i class="fa-solid fa-check text-plum"></i> Préservation de l'émail dentaire</li>
+              </ul>
+
+              <div class="promo-card-footer">
+                <button class="btn btn-primary w-full open-booking-btn" data-service="Blanchiment des Dents (Pack 3 Séances à 200 DH ou 1 Séance à 70 DH)">
+                  <i class="fa-brands fa-whatsapp"></i> Réserver mon Blanchiment
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Épilation Laser -->
+          <article class="promo-card" id="promo-laser">
+            <div class="promo-card-badge badge-teal">
+              <i class="fa-solid fa-award"></i> Technologie Diode
+            </div>
+            <div class="promo-img-wrapper">
+              <img src="assets/images/laser-treatment.jpg" alt="Épilation laser définitive Casablanca" class="promo-img" loading="lazy">
+              <div class="promo-price-tag teal-tag">
+                <span class="label">Visage &amp; Aisselles</span>
+                <span class="price">100 <small>DH</small></span>
+                <span class="sub-price">Corps complet : 900 DH</span>
+              </div>
+            </div>
+            <div class="promo-card-content">
+              <div class="promo-category"><i class="fa-solid fa-feather"></i> Épilation Définitive</div>
+              <h3 class="promo-title">Épilation Laser</h3>
+              <p class="promo-tagline">"Pour une peau douce, lisse et sans complexes ! ✨"</p>
+              
+              <div class="promo-options-table">
+                <div class="option-row">
+                  <span>Zone Visage &amp; Aisselles</span>
+                  <strong>100 DH</strong>
+                </div>
+                <div class="option-row highlight-row">
+                  <span>Tout le Corps (Séance Complète)</span>
+                  <strong>900 DH</strong>
+                </div>
+              </div>
+
+              <ul class="promo-features">
+                <li><i class="fa-solid fa-check text-plum"></i> Technologie diode haute précision et indolore</li>
+                <li><i class="fa-solid fa-check text-plum"></i> Réduction durable et visible de la pilosité</li>
+                <li><i class="fa-solid fa-check text-plum"></i> Adapté à tous les phototypes de peau</li>
+              </ul>
+
+              <div class="promo-card-footer">
+                <button class="btn btn-primary w-full open-booking-btn" data-service="Épilation Laser (Visage & Aisselles 100 DH ou Corps Complet 900 DH)">
+                  <i class="fa-brands fa-whatsapp"></i> Réserver ma Séance Laser
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE BEFORE / AFTER SLIDER -->
+    <section class="section section-before-after" id="avant-apres">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-wand-magic-sparkles text-gold"></i> RÉSULTATS VISIBLES
+          </div>
+          <h2 class="section-title">Avant / Après en Direct</h2>
+          <p class="section-desc">
+            Glissez le curseur pour observer la métamorphose réelle obtenue grâce à nos soins professionnels chez Centre Beauty Souad.
+          </p>
+        </div>
+
+        <div class="comparison-showcase">
+          <!-- Main Interactive Slider for Hair Protein -->
+          <div class="comparison-card">
+            <div class="comparison-badge"><i class="fa-solid fa-star text-gold"></i> Soin Protéine Cheveux (Avant / Après)</div>
+            <div class="comparison-slider" id="hairSliderContainer" tabindex="0" aria-label="Curseur de comparaison avant après pour soin protéine cheveux">
+              <!-- After Image (Background) -->
+              <div class="slider-image-wrapper image-after">
+                <img src="assets/images/protein-after.jpg" alt="Cheveux lisses soyeux après soin protéine">
+                <span class="floating-label label-after">APRÈS</span>
+              </div>
+              <!-- Before Image (Overlay clipped by slider) -->
+              <div class="slider-image-wrapper image-before" id="hairBeforeWrapper">
+                <img src="assets/images/protein-before.jpg" alt="Cheveux secs frisottis avant soin protéine">
+                <span class="floating-label label-before">AVANT</span>
+              </div>
+              <!-- Drag Handle Divider -->
+              <div class="slider-divider" id="hairSliderDivider">
+                <div class="divider-button">
+                  <i class="fa-solid fa-chevron-left"></i>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="comparison-info">
+              <div class="info-content">
+                <h4>Transformation Soin Protéine Cheveux</h4>
+                <p>Des cheveux ternes, abîmés et indisciplinés transformés en une matière soyeuse, ultra-brillante et facile à coiffer dès la 1ère séance.</p>
+              </div>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Soin Protéine Cheveux (300 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver pour 300 DH
+              </button>
+            </div>
+          </div>
+
+          <!-- Secondary Grid for Teeth & Laser Results -->
+          <div class="results-side-grid">
+            <!-- Card 1: Teeth Whitening Result -->
+            <div class="result-tile">
+              <div class="tile-img-box">
+                <img src="assets/images/teeth-whitening.jpg" alt="Résultat blanchiment des dents">
+                <div class="tile-badge"><i class="fa-solid fa-sparkles"></i> 3 Séances = 200 DH</div>
+              </div>
+              <div class="tile-content">
+                <h4>Blanchiment des Dents</h4>
+                <p>Jusqu'à 4 à 8 teintes de gagnées sans altérer la sensibilité de vos dents.</p>
+                <div class="tile-action">
+                  <span class="tile-price">200 DH <small>(3 séances)</small></span>
+                  <button class="btn btn-outline btn-xs open-booking-btn" data-service="Blanchiment des Dents (200 DH)">Prendre RDV</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Laser Result -->
+            <div class="result-tile">
+              <div class="tile-img-box">
+                <img src="assets/images/laser-treatment.jpg" alt="Résultat épilation laser">
+                <div class="tile-badge"><i class="fa-solid fa-shield"></i> Dès 100 DH</div>
+              </div>
+              <div class="tile-content">
+                <h4>Épilation Définitive Laser</h4>
+                <p>Peau satinée, disparition des poils incarnés pour une liberté totale au quotidien.</p>
+                <div class="tile-action">
+                  <span class="tile-price">100 DH <small>(Aisselles)</small></span>
+                  <button class="btn btn-outline btn-xs open-booking-btn" data-service="Épilation Laser (100 DH)">Prendre RDV</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL SERVICES & TARIFS CATALOG -->
+    <section class="section section-services" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-list-check text-gold"></i> CARTE DES SOINS COMPLÈTE
+          </div>
+          <h2 class="section-title">Prestations &amp; Tarifs Officiels</h2>
+          <p class="section-desc">
+            Retrouvez tous nos soins de coiffure, dermocosmétique, esthétique avancée et bien-être avec des tarifs transparents en Dirham marocain (DH).
+          </p>
+        </div>
+
+        <!-- Filter Tabs & Search Controls -->
+        <div class="catalog-controls">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="serviceSearchInput" placeholder="Rechercher un soin (ex: Protéine, Laser, Microblading, Cils...)" aria-label="Rechercher un soin">
+            <button id="clearSearchBtn" class="clear-search-btn" aria-label="Effacer la recherche"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+
+          <div class="filter-pills-wrapper">
+            <button class="filter-pill active" data-filter="all">Tous les Soins</button>
+            <button class="filter-pill" data-filter="promo"><i class="fa-solid fa-fire text-gold"></i> Offres &amp; Promos</button>
+            <button class="filter-pill" data-filter="coiffure"><i class="fa-solid fa-scissors"></i> Coiffure &amp; Protéine</button>
+            <button class="filter-pill" data-filter="esthetique"><i class="fa-solid fa-wand-magic-sparkles"></i> Esthétique Avancée</button>
+            <button class="filter-pill" data-filter="dentaire-laser"><i class="fa-solid fa-bolt"></i> Blanchiment &amp; Laser</button>
+            <button class="filter-pill" data-filter="onglerie"><i class="fa-solid fa-hand-sparkles"></i> Onglerie &amp; Bien-Être</button>
+          </div>
+        </div>
+
+        <!-- Services Cards Grid -->
+        <div class="services-grid" id="servicesGrid">
+
+          <!-- 1. Soin Protéine Cheveux -->
+          <div class="service-item-card" data-category="promo coiffure" data-name="soin proteine cheveux lissage">
+            <div class="service-card-top">
+              <span class="service-tag tag-promo"><i class="fa-solid fa-gift"></i> Promo + Cadeau</span>
+              <div class="service-price">300 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Soin Protéine Cheveux</h3>
+            <p class="service-item-desc">Traitement lissant et nourrissant en profondeur. Offre spéciale : <strong>Petit Shampoing &amp; Masque OFFERTS !</strong> (PKC Ultimate Protein).</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 2h30</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Soin Protéine Cheveux (300 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. Blanchiment des Dents (3 séances) -->
+          <div class="service-item-card" data-category="promo dentaire-laser" data-name="blanchiment des dents 3 seances pack sourire">
+            <div class="service-card-top">
+              <span class="service-tag tag-exclusive"><i class="fa-solid fa-bolt"></i> Pack Exclusif</span>
+              <div class="service-price">200 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Blanchiment des Dents (3 Séances)</h3>
+            <p class="service-item-desc">Pack complet 3 séances pour un sourire blanc éclatant et naturel. Éclaircissement doux sans sensibilité.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 3 Séances</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Blanchiment des Dents 3 Séances (200 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 3. Blanchiment des Dents (1 séance) -->
+          <div class="service-item-card" data-category="dentaire-laser" data-name="blanchiment des dents 1 seance flash">
+            <div class="service-card-top">
+              <span class="service-tag">Découverte</span>
+              <div class="service-price">70 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Blanchiment des Dents (1 Séance)</h3>
+            <p class="service-item-desc">Séance unitaire pour rafraîchir l'éclat de votre émail et éliminer les colorations du café ou thé.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 30 min</span>
+              <button class="btn btn-sm btn-outline open-booking-btn" data-service="Blanchiment des Dents 1 Séance (70 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 4. Épilation Laser - Visage & Aisselles -->
+          <div class="service-item-card" data-category="promo dentaire-laser" data-name="epilation laser visage aisselles definitive">
+            <div class="service-card-top">
+              <span class="service-tag tag-promo">Promo Laser</span>
+              <div class="service-price">100 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Épilation Laser (Visage &amp; Aisselles)</h3>
+            <p class="service-item-desc">Technologie diode indolore pour une peau nette et douce, sans poils incarnés ni irritations.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 20 min</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Épilation Laser Visage & Aisselles (100 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 5. Épilation Laser - Tout le Corps -->
+          <div class="service-item-card" data-category="promo dentaire-laser" data-name="epilation laser corps complet tout le corps">
+            <div class="service-card-top">
+              <span class="service-tag tag-exclusive">Corps Complet</span>
+              <div class="service-price">900 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Épilation Laser (Tout le Corps)</h3>
+            <p class="service-item-desc">Séance intégrale pour l'ensemble du corps avec machine diode de pointe et refroidissement cutané optimal.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h15</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Épilation Laser Tout le Corps (900 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 6. Microblading -->
+          <div class="service-item-card" data-category="esthetique" data-name="microblading sourcils poil a poil pigmentation">
+            <div class="service-card-top">
+              <span class="service-tag">Dermopigmentation</span>
+              <div class="service-price">250 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Microblading Sourcils</h3>
+            <p class="service-item-desc">Technique poil à poil hyperréaliste pour redessiner et densifier la ligne de vos sourcils harmonieusement.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h30</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Microblading Sourcils (250 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 7. Microneedling -->
+          <div class="service-item-card" data-category="esthetique" data-name="microneedling soin visage collagene cicatrices pores">
+            <div class="service-card-top">
+              <span class="service-tag">Soin Régénérant</span>
+              <div class="service-price">300 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Microneedling Visage</h3>
+            <p class="service-item-desc">Stimule le collagène, estompe les taches pigmentaires, resserre les pores et affine le grain de peau.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h00</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Microneedling Visage (300 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 8. BB Glow -->
+          <div class="service-item-card" data-category="esthetique" data-name="bb glow teint parfait eclat fond de teint semi permanent">
+            <div class="service-card-top">
+              <span class="service-tag">Effet Filtre</span>
+              <div class="service-price">300 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">BB Glow Teint Éclatant</h3>
+            <p class="service-item-desc">Unifie le teint, illumine la peau et camoufle les rougeurs et cernes pour un effet "fond de teint naturel" durable.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h00</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="BB Glow (300 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 9. Plasma Pen -->
+          <div class="service-item-card" data-category="esthetique" data-name="plasma pen lifting paupieres rides ridules">
+            <div class="service-card-top">
+              <span class="service-tag">Lifting Sans Chirurgie</span>
+              <div class="service-price">400 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Plasma Pen</h3>
+            <p class="service-item-desc">Lifting non chirurgical des paupières, réduction des rides d'expression et raffermissement cutané ciblé.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 45 min</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Plasma Pen (400 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 10. Mèches -->
+          <div class="service-item-card" data-category="coiffure" data-name="meches balayage blond cheveux lumiere">
+            <div class="service-card-top">
+              <span class="service-tag">Colorimétrie</span>
+              <div class="service-price">130 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Mèches &amp; Balayage</h3>
+            <p class="service-item-desc">Nuances subtiles et reflets lumineux pour apporter dimension, relief et brillance à vos cheveux.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h45</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Mèches & Balayage (130 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 11. Coloration Cheveux -->
+          <div class="service-item-card" data-category="coiffure" data-name="coloration cheveux teinture racines">
+            <div class="service-card-top">
+              <span class="service-tag">Coiffure</span>
+              <div class="service-price">130 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Coloration Cheveux</h3>
+            <p class="service-item-desc">Couverture parfaite des cheveux blancs et reflets intenses avec des produits respectueux de la fibre capillaire.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h15</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Coloration Cheveux (130 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 12. Soin des Cheveux -->
+          <div class="service-item-card" data-category="coiffure" data-name="soin des cheveux botox capillaire masque nutrition">
+            <div class="service-card-top">
+              <span class="service-tag">Nutrition Capillaire</span>
+              <div class="service-price">100 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Soin des Cheveux Profond</h3>
+            <p class="service-item-desc">Masque régénérant haute nutrition pour réparer les longueurs cassantes et redonner de la vitalité.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 45 min</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Soin des Cheveux (100 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 13. Cils Permanent -->
+          <div class="service-item-card" data-category="esthetique" data-name="cils permanent rehaussement teinture regard">
+            <div class="service-card-top">
+              <span class="service-tag">Regard</span>
+              <div class="service-price">100 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Cils Permanent / Rehaussement</h3>
+            <p class="service-item-desc">Courbe sublime et regard intensifié sans mascara pendant plusieurs semaines.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 45 min</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Cils Permanent (100 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 14. Acrochordon -->
+          <div class="service-item-card" data-category="esthetique" data-name="acrochordon tetine retrait peau grain de beaute">
+            <div class="service-card-top">
+              <span class="service-tag">Dermo-Esthétique</span>
+              <div class="service-price">100 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Acrochordon (Retrait)</h3>
+            <p class="service-item-desc">Élimination rapide, propre et stérile des petites excroissances cutanées (tétines de peau).</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 20 min</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Retrait Acrochordon (100 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 15. Lifting Visage / Sourcils -->
+          <div class="service-item-card" data-category="esthetique" data-name="lifting sourcils visage mini lift">
+            <div class="service-card-top">
+              <span class="service-tag">Tenseur</span>
+              <div class="service-price">50 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Lifting Express</h3>
+            <p class="service-item-desc">Mini lift tenseur pour ouvrir le regard et redéfinir les pommettes avant une occasion spéciale.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 25 min</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Lifting Express (50 DH)">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 16. Chignon & Coiffure Événementielle -->
+          <div class="service-item-card" data-category="coiffure" data-name="chignon coiffure mariee soiree fete brushing">
+            <div class="service-card-top">
+              <span class="service-tag">Événement &amp; Mariage</span>
+              <div class="service-price"><small>Sur</small> Devis</div>
+            </div>
+            <h3 class="service-item-title">Chignon &amp; Coiffure Mariée / Soirée</h3>
+            <p class="service-item-desc">Créations personnalisées de chignons artistiques, tresses bohèmes et coiffures royales pour fêtes.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> Sur RDV</span>
+              <button class="btn btn-sm btn-outline open-booking-btn" data-service="Chignon & Coiffure Événementielle (Sur Devis)">
+                <i class="fa-brands fa-whatsapp"></i> Consulter
+              </button>
+            </div>
+          </div>
+
+          <!-- 17. Shadow Brows -->
+          <div class="service-item-card" data-category="esthetique" data-name="shadow brows sourcils poudres ombrage">
+            <div class="service-card-top">
+              <span class="service-tag">Dermopigmentation</span>
+              <div class="service-price"><small>Sur</small> Consultation</div>
+            </div>
+            <h3 class="service-item-title">Shadow Brows (Effet Poudré)</h3>
+            <p class="service-item-desc">Ombrage doux dégradé pour un effet maquillage soigné et sophistiqué du matin au soir.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> Sur RDV</span>
+              <button class="btn btn-sm btn-outline open-booking-btn" data-service="Shadow Brows Sourcils">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 18. Mésothérapie -->
+          <div class="service-item-card" data-category="esthetique" data-name="mesotherapie vitamines peau visage cuir chevelu">
+            <div class="service-card-top">
+              <span class="service-tag">Revitalisation</span>
+              <div class="service-price"><small>Sur</small> Consultation</div>
+            </div>
+            <h3 class="service-item-title">Mésothérapie (Visage &amp; Cuir Chevelu)</h3>
+            <p class="service-item-desc">Infusion de cocktails d'acide hyaluronique et vitamines pour freiner la chute et repulper la peau.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> Sur RDV</span>
+              <button class="btn btn-sm btn-outline open-booking-btn" data-service="Mésothérapie Visage / Cheveux">
+                <i class="fa-brands fa-whatsapp"></i> Consulter
+              </button>
+            </div>
+          </div>
+
+          <!-- 19. Détatouage -->
+          <div class="service-item-card" data-category="esthetique" data-name="detatouage sourcils effacement maquillage permanent">
+            <div class="service-card-top">
+              <span class="service-tag">Correction</span>
+              <div class="service-price"><small>Sur</small> Consultation</div>
+            </div>
+            <h3 class="service-item-title">Détatouage &amp; Correction</h3>
+            <p class="service-item-desc">Effacement progressif et sécurisé des anciens tatouages ou microblading mal pigmentés.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> Sur RDV</span>
+              <button class="btn btn-sm btn-outline open-booking-btn" data-service="Détatouage & Correction">
+                <i class="fa-brands fa-whatsapp"></i> Consulter
+              </button>
+            </div>
+          </div>
+
+          <!-- 20. Soin du Visage Hydratant & Nettoyant -->
+          <div class="service-item-card" data-category="esthetique" data-name="soin du visage hydrafacial nettoyage profond points noirs">
+            <div class="service-card-top">
+              <span class="service-tag">Soin Signature</span>
+              <div class="service-price"><small>Dès</small> 150 <span class="currency">DH</span></div>
+            </div>
+            <h3 class="service-item-title">Soin du Visage Purifiant &amp; Éclat</h3>
+            <p class="service-item-desc">Nettoyage profond, extraction des impuretés, gommage doux et masque hydratant revitalisant.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h00</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Soin du Visage Purifiant & Éclat">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 21. Manucure - Pédicure -->
+          <div class="service-item-card" data-category="onglerie" data-name="manucure pedicure mains pieds cuticules beauté">
+            <div class="service-card-top">
+              <span class="service-tag">Onglerie</span>
+              <div class="service-price"><small>Sur</small> RDV</div>
+            </div>
+            <h3 class="service-item-title">Manucure &amp; Pédicure Spa</h3>
+            <p class="service-item-desc">Traitement complet des cuticules, limage soigné, gommage et massage hydratant relaxant des mains et pieds.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 50 min</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Manucure & Pédicure Spa">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 22. Pose Gel & Nail Art -->
+          <div class="service-item-card" data-category="onglerie" data-name="pose gel capsules chablon semi permanent nail art vernis">
+            <div class="service-card-top">
+              <span class="service-tag">Ongles en Gel</span>
+              <div class="service-price"><small>Sur</small> RDV</div>
+            </div>
+            <h3 class="service-item-title">Pose Gel &amp; Vernis Semi-Permanent</h3>
+            <p class="service-item-desc">Extension sur capsules ou chablon, gainage renforçateur, finition brillante ou mate et décors sur-mesure.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h15</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Pose Gel & Semi-Permanent">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 23. Épilation à la Cire -->
+          <div class="service-item-card" data-category="onglerie" data-name="epilation cire orientale traditionnelle jambes maillot bras sourcils">
+            <div class="service-card-top">
+              <span class="service-tag">Épilation Douce</span>
+              <div class="service-price"><small>Sur</small> RDV</div>
+            </div>
+            <h3 class="service-item-title">Épilation Cire Traditionnelle</h3>
+            <p class="service-item-desc">Cire tiède ou chaude hypoallergénique pour jambes complètes, bras, maillot et sourcils sans irritation.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> Sur mesure</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Épilation Cire Traditionnelle">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 24. Massage Relaxant -->
+          <div class="service-item-card" data-category="onglerie" data-name="massage relaxant anti stress amincissant dos corps">
+            <div class="service-card-top">
+              <span class="service-tag">Bien-Être</span>
+              <div class="service-price"><small>Sur</small> RDV</div>
+            </div>
+            <h3 class="service-item-title">Massage Relaxant &amp; Détox</h3>
+            <p class="service-item-desc">Détente musculaire aux huiles précieuses pour relâcher les tensions, améliorer la circulation et déstresser.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 45-60 min</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Massage Relaxant & Détox">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+          <!-- 25. Makeup Artist -->
+          <div class="service-item-card" data-category="onglerie" data-name="makeup artist maquillage mariee fete soiree shooting invitee">
+            <div class="service-card-top">
+              <span class="service-tag">Maquillage Pro</span>
+              <div class="service-price"><small>Sur</small> RDV</div>
+            </div>
+            <h3 class="service-item-title">Makeup Artist Professionnel</h3>
+            <p class="service-item-desc">Mise en beauté sophistiquée, contouring, smoky eyes ou look nude lumineux adapté à vos événements et mariages.</p>
+            <div class="service-card-bottom">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h00</span>
+              <button class="btn btn-sm btn-primary open-booking-btn" data-service="Makeup Artist Professionnel">
+                <i class="fa-brands fa-whatsapp"></i> Réserver
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- No results found state -->
+        <div class="no-results-state hidden" id="noResultsState">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h4>Aucune prestation trouvée</h4>
+          <p>Essayez un autre mot-clé ou contactez-nous directement sur WhatsApp pour un soin sur-mesure.</p>
+          <button class="btn btn-outline" id="resetSearchBtn">Réinitialiser les filtres</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE ESTIMATEUR DE DEVIS / PACK CALCULATOR -->
+    <section class="section section-calculator" id="calculateur">
+      <div class="container">
+        <div class="calculator-card">
+          <div class="calculator-header">
+            <div class="badge-tag"><i class="fa-solid fa-calculator"></i> Simulateur Interactif</div>
+            <h2>Composez Votre Devis Beauté Personnalisé</h2>
+            <p>Sélectionnez les prestations qui vous intéressent pour calculer votre total estimé en DH et réservez votre pack en un clic sur WhatsApp.</p>
+          </div>
+
+          <div class="calculator-body">
+            <div class="calc-options-grid">
+              
+              <label class="calc-checkbox-card">
+                <input type="checkbox" class="calc-item-checkbox" data-name="Soin Protéine Cheveux (+ Shampoing & Masque offerts)" data-price="300">
+                <span class="checkbox-custom"></span>
+                <div class="card-details">
+                  <strong>Soin Protéine Cheveux</strong>
+                  <span class="desc">Avec shampoing &amp; masque PKC offerts</span>
+                </div>
+                <div class="card-price">300 DH</div>
+              </label>
+
+              <label class="calc-checkbox-card">
+                <input type="checkbox" class="calc-item-checkbox" data-name="Blanchiment des Dents (Pack 3 Séances)" data-price="200">
+                <span class="checkbox-custom"></span>
+                <div class="card-details">
+                  <strong>Blanchiment Dents (Pack 3 Séances)</strong>
+                  <span class="desc">Éclaircissement sans douleur</span>
+                </div>
+                <div class="card-price">200 DH</div>
+              </label>
+
+              <label class="calc-checkbox-card">
+                <input type="checkbox" class="calc-item-checkbox" data-name="Épilation Laser (Visage & Aisselles)" data-price="100">
+                <span class="checkbox-custom"></span>
+                <div class="card-details">
+                  <strong>Épilation Laser Visage &amp; Aisselles</strong>
+                  <span class="desc">Technologie diode indolore</span>
+                </div>
+                <div class="card-price">100 DH</div>
+              </label>
+
+              <label class="calc-checkbox-card">
+                <input type="checkbox" class="calc-item-checkbox" data-name="Microblading Sourcils" data-price="250">
+                <span class="checkbox-custom"></span>
+                <div class="card-details">
+                  <strong>Microblading Sourcils</strong>
+                  <span class="desc">Poil à poil hyperréaliste</span>
+                </div>
+                <div class="card-price">250 DH</div>
+              </label>
+
+              <label class="calc-checkbox-card">
+                <input type="checkbox" class="calc-item-checkbox" data-name="Microneedling Visage" data-price="300">
+                <span class="checkbox-custom"></span>
+                <div class="card-details">
+                  <strong>Microneedling Visage</strong>
+                  <span class="desc">Stimulation collagène &amp; pores</span>
+                </div>
+                <div class="card-price">300 DH</div>
+              </label>
+
+              <label class="calc-checkbox-card">
+                <input type="checkbox" class="calc-item-checkbox" data-name="BB Glow Teint Éclatant" data-price="300">
+                <span class="checkbox-custom"></span>
+                <div class="card-details">
+                  <strong>BB Glow Teint Parfait</strong>
+                  <span class="desc">Effet teint unifié &amp; lumineux</span>
+                </div>
+                <div class="card-price">300 DH</div>
+              </label>
+
+              <label class="calc-checkbox-card">
+                <input type="checkbox" class="calc-item-checkbox" data-name="Mèches & Balayage Cheveux" data-price="130">
+                <span class="checkbox-custom"></span>
+                <div class="card-details">
+                  <strong>Mèches / Balayage Cheveux</strong>
+                  <span class="desc">Reflets et reflets éclatants</span>
+                </div>
+                <div class="card-price">130 DH</div>
+              </label>
+
+              <label class="calc-checkbox-card">
+                <input type="checkbox" class="calc-item-checkbox" data-name="Cils Permanent Rehaussement" data-price="100">
+                <span class="checkbox-custom"></span>
+                <div class="card-details">
+                  <strong>Cils Permanent / Rehaussement</strong>
+                  <span class="desc">Courbure regard longue durée</span>
+                </div>
+                <div class="card-price">100 DH</div>
+              </label>
+
+            </div>
+
+            <!-- Calculator Summary Box -->
+            <div class="calc-summary-panel">
+              <div class="summary-top">
+                <span class="selected-count" id="calcSelectedCount">0 prestation(s) sélectionnée(s)</span>
+                <button type="button" class="btn-text-reset" id="calcResetBtn">Vider la sélection</button>
+              </div>
+
+              <div class="summary-total-row">
+                <span class="total-label">Total Estimé :</span>
+                <span class="total-amount" id="calcTotalAmount">0 <small>DH</small></span>
+              </div>
+
+              <p class="summary-note">
+                <i class="fa-solid fa-circle-info"></i> Ce devis est sans engagement. Réservez directement sur WhatsApp pour bloquer votre date.
+              </p>
+
+              <button class="btn btn-primary btn-lg w-full" id="calcBookWhatsAppBtn" disabled>
+                <i class="fa-brands fa-whatsapp"></i> Réserver mon Pack sur WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US / EXPERTISE -->
+    <section class="section section-why-us">
+      <div class="container">
+        <div class="why-us-grid">
+          <div class="why-us-image-col">
+            <div class="image-stack">
+              <img src="assets/images/facial-treatment.jpg" alt="Soin visage hydrafacial Centre Beauty Souad" class="stack-img main-img" loading="lazy">
+              <img src="assets/images/manicure.jpg" alt="Onglerie et manucure" class="stack-img accent-img" loading="lazy">
+              <div class="experience-badge">
+                <span class="exp-num">100%</span>
+                <span class="exp-text">Satisfaction &amp; Hygiène</span>
+              </div>
+            </div>
+          </div>
+          <div class="why-us-text-col">
+            <div class="section-subtitle">
+              <i class="fa-solid fa-heart text-gold"></i> NOTRE ENGAGEMENT
+            </div>
+            <h2 class="section-title">Pourquoi Choisir Centre Beauty Souad ?</h2>
+            <p class="section-desc">
+              Situé au cœur du quartier Al Azhar à Casablanca, nous allions savoir-faire esthétique de pointe et hospitalité marocaine chaleureuse pour vous offrir une parenthèse de beauté absolue.
+            </p>
+            <div class="features-list">
+              <div class="feature-row">
+                <div class="feature-icon"><i class="fa-solid fa-flask-vial"></i></div>
+                <div>
+                  <h4>Produits Professionnels Authentiques</h4>
+                  <p>Nous utilisons exclusivement des gammes reconnues comme PKC Ultimate Protein pour préserver la santé de vos cheveux et de votre peau.</p>
+                </div>
+              </div>
+              <div class="feature-row">
+                <div class="feature-icon"><i class="fa-solid fa-pump-medical"></i></div>
+                <div>
+                  <h4>Stérilisation &amp; Hygiène Médicale</h4>
+                  <p>Protocoles d'asepsie stricts, matériel à usage unique ou désinfecté aux normes les plus rigoureuses pour chaque cliente.</p>
+                </div>
+              </div>
+              <div class="feature-row">
+                <div class="feature-icon"><i class="fa-solid fa-tags"></i></div>
+                <div>
+                  <h4>Tarifs Justes &amp; Transparents en DH</h4>
+                  <p>Pas de mauvaises surprises à la caisse : tous les prix de nos flyers et soins sont affichés clairement dès votre arrivée.</p>
+                </div>
+              </div>
+            </div>
+            <div class="why-cta">
+              <button class="btn btn-primary open-booking-btn" data-service="Consultation Personnalisée">
+                <i class="fa-brands fa-whatsapp"></i> Prendre RDV Maintenant
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS / AVIS CLIENTES -->
+    <section class="section section-testimonials" id="temoignages">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-star text-gold"></i> TÉMOIGNAGES
+          </div>
+          <h2 class="section-title">Ce Que Disent Nos Clientes</h2>
+          <p class="section-desc">
+            Leur sourire et leur confiance sont notre plus belle réussite. Découvrez les retours de nos fidèles clientes casablancaises.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "J'ai fait le soin protéine à 300 DH avec le cadeau shampoing et masque. Résultat incroyable ! Mes cheveux bouclés et secs sont devenus ultra doux, lisses comme de la soie sans aucun effet cartonné. Équipe adorable et salon très propre."
+            </p>
+            <div class="client-meta">
+              <div class="client-avatar">K</div>
+              <div class="client-info">
+                <strong>Khadija B.</strong>
+                <span>Casablanca (Al Azhar) • Soin Protéine</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Le pack blanchiment des dents 3 séances à 200 DH est juste magique ! Aucune douleur ni sensibilité après, et la différence de teinte est bluffante. Je recommande Centre Beauty Souad les yeux fermés."
+            </p>
+            <div class="client-meta">
+              <div class="client-avatar">S</div>
+              <div class="client-info">
+                <strong>Salma M.</strong>
+                <span>Casablanca • Blanchiment des Dents</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "J'ai testé l'épilation laser aisselles à 100 DH et le microneedling. Très rassurante, gestes précis et explications claires. Ma peau est rayonnante. C'est devenu mon adresse beauté de référence à Casablanca !"
+            </p>
+            <div class="client-meta">
+              <div class="client-avatar">I</div>
+              <div class="client-info">
+                <strong>Imane T.</strong>
+                <span>Casablanca • Laser &amp; Microneedling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section section-faq" id="faq">
+      <div class="container faq-container">
+        <div class="section-header text-center">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-circle-question text-gold"></i> VOS QUESTIONS
+          </div>
+          <h2 class="section-title">Questions Fréquentes</h2>
+          <p class="section-desc">Tout ce que vous souhaitez savoir avant votre visite chez Centre Beauty Souad.</p>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="true">
+              <span>Combien de temps durent les effets du soin protéine ?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Le soin protéine dure en moyenne de 4 à 6 mois selon votre fréquence de lavage et l'entretien apporté. Nous vous offrons le shampoing et masque sans sulfate PKC afin de prolonger au maximum la brillance et la souplesse de votre lissage.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Le blanchiment dentaire provoque-t-il des douleurs ?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Notre formule de blanchiment cosmétique est spécialement conçue pour être indolore et préserver l'émail dentaire. Vous pouvez ressentir un léger picotement passager pendant la séance, mais aucune sensibilité prolongée après le soin.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Faut-il raser la zone avant la séance d'épilation laser ?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Oui, il est conseillé de raser la zone à traiter (aisselles, jambes, etc.) 24h avant la séance au rasoir classique (évitez la cire ou l'épilateur électrique qui arrachent le bulbe). Cela permet au faisceau laser de cibler directement la racine du poil.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Faut-il obligatoirement prendre rendez-vous avant de venir ?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Bien que nous accueillions les clientes selon nos disponibilités, la prise de rendez-vous sur WhatsApp au <strong>06.60.64.74.61</strong> est vivement recommandée pour vous garantir une prise en charge immédiate sans temps d'attente.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Où est situé exactement le salon à Casablanca ?</span>
+              <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Centre Beauty Souad est idéalement situé à <strong>Al Azhar, Madinati, Casablanca</strong>. Vous pouvez nous envoyer un message sur WhatsApp pour recevoir l'emplacement GPS direct en un clic.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION & CONTACT SECTION -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-box-wrapper">
+          <div class="contact-info-col">
+            <div class="section-subtitle">
+              <i class="fa-solid fa-paper-plane text-gold"></i> NOUS RENDRE VISITE
+            </div>
+            <h2 class="contact-title">Contact &amp; Horaires</h2>
+            <p class="contact-intro">
+              Nous serons ravies de vous accueillir dans notre centre de beauté à Casablanca pour un moment de détente et de métamorphose.
+            </p>
+
+            <div class="contact-cards-list">
+              <div class="contact-item">
+                <div class="item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <strong>Adresse du Salon</strong>
+                  <p>Al Azhar, Madinati, Casablanca, Maroc</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="item-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <strong>WhatsApp &amp; Téléphone</strong>
+                  <p><a href="https://wa.me/212660647461" target="_blank" rel="noopener" class="contact-phone-link">06.60.64.74.61</a> (+212 6 60 64 74 61)</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="item-icon"><i class="fa-regular fa-clock"></i></div>
+                <div>
+                  <strong>Horaires d'Ouverture</strong>
+                  <p>Lundi au Dimanche (7j/7) : 10h00 - 20h00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-action-btns">
+              <a href="https://wa.me/212660647461?text=Bonjour%20Centre%20Beauty%20Souad,%20je%20souhaite%20des%20informations%20et%20prendre%20rendez-vous" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Écrire sur WhatsApp
+              </a>
+              <a href="tel:0660647461" class="btn btn-outline">
+                <i class="fa-solid fa-phone"></i> Appeler Directement
+              </a>
+            </div>
+          </div>
+
+          <!-- Location Map Frame -->
+          <div class="contact-map-col">
+            <div class="map-card-wrapper">
+              <div class="map-card-header">
+                <div class="salon-pin-info">
+                  <i class="fa-solid fa-spa text-plum"></i>
+                  <div>
+                    <strong>Centre Beauty Souad</strong>
+                    <span>Al Azhar, Madinati, Casablanca</span>
+                  </div>
+                </div>
+                <a href="https://www.google.com/maps/search/Al+Azhar+Casablanca" target="_blank" rel="noopener" class="btn btn-xs btn-outline">
+                  <i class="fa-solid fa-diamond-turn-right"></i> Itinéraire
+                </a>
+              </div>
+              <div class="map-embed-container">
+                <iframe 
+                  title="Carte localisation Centre Beauty Souad Casablanca"
+                  src="https://maps.google.com/maps?q=Al%20Azhar,%20Casablanca,%20Morocco&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy">
+                </iframe>
+              </div>
+              <div class="map-card-footer">
+                <span><i class="fa-solid fa-car"></i> Stationnement facile à proximité</span>
+                <span><i class="fa-solid fa-shield-halved"></i> Quartier calme et sécurisé</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <img src="assets/images/logo.svg" alt="Centre Beauty Souad" class="footer-logo" width="220">
+          <p class="footer-bio">
+            Centre de coiffure, dermocosmétique et d'esthétique avancée à Casablanca. Des prestations haut de gamme, des offres accessibles et une équipe dévouée à votre éclat.
+          </p>
+          <div class="footer-socials">
+            <a href="https://wa.me/212660647461" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Offres En Vedette</h4>
+          <ul>
+            <li><a href="#promo-proteine">Soin Protéine (300 DH)</a></li>
+            <li><a href="#promo-dents">Blanchiment Dents 3 séances (200 DH)</a></li>
+            <li><a href="#promo-laser">Épilation Laser Aisselles (100 DH)</a></li>
+            <li><a href="#services">Microblading Sourcils (250 DH)</a></li>
+            <li><a href="#services">Microneedling &amp; BB Glow (300 DH)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#promos">Offres &amp; Promos</a></li>
+            <li><a href="#services">Carte des Soins</a></li>
+            <li><a href="#avant-apres">Résultats Avant / Après</a></li>
+            <li><a href="#calculateur">Devis Personnalisé</a></li>
+            <li><a href="#faq">Questions Fréquentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contactez-Nous</h4>
+          <p class="footer-contact-line"><i class="fa-solid fa-phone text-gold"></i> <strong>06.60.64.74.61</strong></p>
+          <p class="footer-contact-line"><i class="fa-brands fa-whatsapp text-gold"></i> WhatsApp 7j/7</p>
+          <p class="footer-contact-line"><i class="fa-solid fa-location-dot text-gold"></i> Azhar, Madinati, Casablanca</p>
+          <p class="footer-contact-line"><i class="fa-regular fa-clock text-gold"></i> Ouvert 10h00 - 20h00</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Centre Beauty Souad Casablanca. Tous droits réservés.</p>
+        <p class="footer-credit">Conçu avec élégance pour sublimer votre expérience beauté.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <aside class="floating-whatsapp-container" aria-label="Contact rapide WhatsApp">
+    <a href="https://wa.me/212660647461?text=Bonjour%20Centre%20Beauty%20Souad,%20je%20souhaite%20prendre%20un%20rendez-vous" 
+       target="_blank" 
+       rel="noopener" 
+       class="floating-whatsapp-btn" 
+       id="floatingWhatsAppBtn"
+       title="Réserver sur WhatsApp">
+      <div class="btn-pulse-wave"></div>
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="btn-tooltip">Prendre RDV</span>
+    </a>
+  </aside>
+
+  <!-- INTERACTIVE BOOKING MODAL -->
+  <div class="modal-overlay" id="bookingModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <i class="fa-brands fa-whatsapp text-whatsapp"></i>
+          <div>
+            <h3 id="modalTitle">Prendre Rendez-vous</h3>
+            <span>Confirmation directe sur WhatsApp au 06.60.64.74.61</span>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Fermer la fenêtre">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form id="bookingForm" class="modal-body">
+        <!-- Service Choisi -->
+        <div class="form-group">
+          <label for="bookService">Prestation Souhaitée <span class="required">*</span></label>
+          <select id="bookService" required>
+            <optgroup label="🌟 Offres & Promos Exclusives">
+              <option value="Soin Protéine Cheveux (300 DH + Shampoing/Masque Offerts)">Soin Protéine Cheveux (300 DH + Shampoing/Masque Offerts)</option>
+              <option value="Blanchiment des Dents (3 Séances - 200 DH)">Blanchiment des Dents (3 Séances - 200 DH)</option>
+              <option value="Blanchiment des Dents (1 Séance - 70 DH)">Blanchiment des Dents (1 Séance - 70 DH)</option>
+              <option value="Épilation Laser Visage & Aisselles (100 DH)">Épilation Laser Visage & Aisselles (100 DH)</option>
+              <option value="Épilation Laser Tout le Corps (900 DH)">Épilation Laser Tout le Corps (900 DH)</option>
+            </optgroup>
+            <optgroup label="💇 Coiffure & Soins">
+              <option value="Mèches & Balayage (130 DH)">Mèches & Balayage (130 DH)</option>
+              <option value="Coloration Cheveux (130 DH)">Coloration Cheveux (130 DH)</option>
+              <option value="Soin des Cheveux (100 DH)">Soin des Cheveux (100 DH)</option>
+              <option value="Chignon & Coiffure Mariée / Soirée (Sur Devis)">Chignon & Coiffure Soirée (Sur Devis)</option>
+            </optgroup>
+            <optgroup label="✨ Esthétique Avancée & Dermocosmétique">
+              <option value="Microblading Sourcils (250 DH)">Microblading Sourcils (250 DH)</option>
+              <option value="Microneedling Visage (300 DH)">Microneedling Visage (300 DH)</option>
+              <option value="BB Glow Teint Parfait (300 DH)">BB Glow Teint Parfait (300 DH)</option>
+              <option value="Plasma Pen Lifting (400 DH)">Plasma Pen Lifting (400 DH)</option>
+              <option value="Retrait Acrochordon (100 DH)">Retrait Acrochordon (100 DH)</option>
+              <option value="Lifting Express (50 DH)">Lifting Express (50 DH)</option>
+              <option value="Cils Permanent / Rehaussement (100 DH)">Cils Permanent (100 DH)</option>
+              <option value="Shadow Brows Sourcils">Shadow Brows</option>
+              <option value="Mésothérapie Visage / Cheveux">Mésothérapie</option>
+              <option value="Détatouage & Correction">Détatouage & Correction</option>
+              <option value="Soin du Visage Purifiant & Éclat">Soin du Visage Purifiant & Éclat</option>
+            </optgroup>
+            <optgroup label="💅 Onglerie & Bien-Être">
+              <option value="Manucure & Pédicure Spa">Manucure & Pédicure Spa</option>
+              <option value="Pose Gel & Semi-Permanent">Pose Gel & Semi-Permanent</option>
+              <option value="Épilation Cire Traditionnelle">Épilation Cire Traditionnelle</option>
+              <option value="Massage Relaxant & Détox">Massage Relaxant & Détox</option>
+              <option value="Makeup Artist Professionnel">Makeup Artist Professionnel</option>
+            </optgroup>
+            <option value="Autre demande / Consultation Générale">Autre demande / Consultation Générale</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <!-- Nom Client -->
+          <div class="form-group">
+            <label for="clientName">Votre Nom &amp; Prénom <span class="required">*</span></label>
+            <input type="text" id="clientName" placeholder="Ex: Sarah Alaoui" required>
+          </div>
+          <!-- Téléphone -->
+          <div class="form-group">
+            <label for="clientPhone">Votre Téléphone / WhatsApp</label>
+            <input type="tel" id="clientPhone" placeholder="Ex: 06 12 34 56 78">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <!-- Date Souhaitée -->
+          <div class="form-group">
+            <label for="bookDate">Date Souhaitée <span class="required">*</span></label>
+            <input type="date" id="bookDate" required>
+          </div>
+          <!-- Créneau Horaire -->
+          <div class="form-group">
+            <label for="bookTime">Créneau Horaire Souhaité</label>
+            <select id="bookTime">
+              <option value="Matinée (10h00 - 13h00)">Matinée (10h00 - 13h00)</option>
+              <option value="Début d'Après-midi (13h00 - 16h00)">Début d'Après-midi (13h00 - 16h00)</option>
+              <option value="Fin d'Après-midi / Soirée (16h00 - 20h00)">Fin d'Après-midi / Soirée (16h00 - 20h00)</option>
+              <option value="Premier créneau disponible">Premier créneau disponible</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Notes / Précisions -->
+        <div class="form-group">
+          <label for="bookNotes">Remarques particulières (optionnel)</label>
+          <textarea id="bookNotes" rows="2" placeholder="Précisez la longueur des cheveux, vos disponibilités exactes ou toute question..."></textarea>
+        </div>
+
+        <!-- Live WhatsApp Message Preview -->
+        <div class="whatsapp-preview-box">
+          <div class="preview-header">
+            <i class="fa-brands fa-whatsapp text-whatsapp"></i> Aperçu du message WhatsApp envoyé :
+          </div>
+          <div class="preview-bubble" id="whatsappMessagePreview">
+            Bonjour Centre Beauty Souad, je souhaite prendre rendez-vous pour : [Soin]...
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-whatsapp btn-lg w-full">
+            <i class="fa-brands fa-whatsapp"></i> Envoyer et Confirmer sur WhatsApp
+          </button>
+          <span class="safe-note"><i class="fa-solid fa-lock"></i> Aucun paiement en ligne requis. Vos coordonnées restent confidentielles.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- JavaScript Application -->
+  <script src="app.js"></script>
+</body>
+</html>

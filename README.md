@@ -1,0 +1,55 @@
+# Centre Beauty Souad — Casablanca
+
+Site web vitrine haut de gamme pour le salon de coiffure, beauté et centre esthétique **Centre Beauty Souad** (Al Azhar, Madinati, Casablanca).
+
+---
+
+## ✨ Fonctionnalités Incluses
+
+1. **Identité Visuelle Chic & Élégante** : Palette personnalisée « Plum & Rose Gold » inspirée du logo et des affiches du salon, typographie moderne et soignée, design 100% responsive (mobile, tablette, desktop).
+2. **Promos Exclusives Mises en Avant** :
+   - **Soin Protéine Cheveux (Dès 300 DH)** : Avec petit shampoing & masque PKC Ultimate Protein offerts.
+   - **Blanchiment des Dents** : 3 séances à 200 DH (ou 1 séance à 70 DH).
+   - **Épilation Laser** : Dès 100 DH (Visage & Aisselles) / Tout le corps à 900 DH.
+3. **Curseur Interactif Avant / Après** : Comparateur visuel interactif en direct (cheveux avant/après soin protéine).
+4. **Catalogue Complet des Prestations avec Filtres & Recherche en Direct** :
+   - Coiffure & Soins (Protéine, Mèches, Coloration, Soin profond, Chignon).
+   - Esthétique Avancée (Microblading, Microneedling, BB Glow, Plasma Pen, Acrochordon, Lifting, Cils permanent, Mésothérapie, Détatouage).
+   - Onglerie & Bien-Être (Manucure-Pédicure Spa, Pose gel, Épilation cire, Massage, Makeup Artist).
+5. **Simulateur de Devis & Calculateur de Pack Interactif** : Les clientes peuvent cocher leurs prestations préférées, voir le total instantané en DH, et réserver leur pack personnalisé directement sur WhatsApp.
+6. **Formulaire de Réservation Direct WhatsApp** :
+   - Choix du soin, nom, date, créneau horaire et notes.
+   - Prévisualisation dynamique du message.
+   - Envoi direct vers le numéro officiel **06.60.64.74.61** (`+212660647461`).
+7. **Bouton WhatsApp Flottant** : Toujours accessible avec animation d'attention.
+8. **Localisation & Horaires** : Al Azhar, Casablanca, ouvert 7j/7 de 10h00 à 20h00 avec intégration Google Maps.
+9. **Avis Clientes & Foire Aux Questions (FAQ Accordéon)**.
+
+---
+
+## 🚀 Déploiement sur Vercel (100% Gratuit & Instantané)
+
+Ce projet est un site **Frontend pur (HTML5 + Vanilla CSS3 + Vanilla JS)**, sans dépendance lourde :
+
+### Option 1 : Déploiement via le site Vercel (Le plus simple)
+1. Créez un compte ou connectez-vous sur [vercel.com](https://vercel.com).
+2. Déposez ce dossier sur GitHub, ou glissez-déposez le dossier du projet directement dans l'interface Vercel (*Import Project*).
+3. Vercel détectera automatiquement la configuration statique avec `vercel.json` et déploiera votre site en quelques secondes avec une URL sécurisée en `https://`.
+
+### Option 2 : Déploiement via Vercel CLI
+Ouvrez un terminal dans ce dossier et lancez :
+```bash
+npx vercel
+```
+Suivez les 2-3 questions à l'écran, et le site sera immédiatement en ligne !
+
+---
+
+## 💻 Prévisualisation Locale
+
+Pour tester le site en local :
+```bash
+node server.js
+```
+Ouvrez ensuite votre navigateur sur :
+[http://localhost:5050/](http://localhost:5050/)

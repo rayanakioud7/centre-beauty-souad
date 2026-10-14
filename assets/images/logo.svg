@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" fill="none">
+  <!-- Lotus / Orchid Floral Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Glow / Background disc subtle -->
+    <circle cx="50" cy="50" r="48" fill="#FBF3F7" stroke="#EED8E3" stroke-width="1.5"/>
+    
+    <!-- Stylized Flower Petals in Plum -->
+    <path d="M50 16 C42 32 30 46 22 58 C18 64 20 74 27 79 C34 84 44 82 48 74 C49 72 50 69 50 67 C50 69 51 72 52 74 C56 82 66 84 73 79 C80 74 82 64 78 58 C70 46 58 32 50 16 Z" 
+          fill="#7A1A4E" />
+    <!-- Center petal highlight -->
+    <path d="M50 24 C45 38 38 48 35 58 C33 63 35 68 40 71 C45 74 50 71 50 67 C50 71 55 74 60 71 C65 68 67 63 65 58 C62 48 55 38 50 24 Z" 
+          fill="#942663" opacity="0.9"/>
+    <!-- Side left petal -->
+    <path d="M42 54 C30 52 18 56 12 66 C7 74 11 84 20 86 C28 88 36 83 40 73 C42 67 42 60 42 54 Z" 
+          fill="#66123F"/>
+    <!-- Side right petal -->
+    <path d="M58 54 C70 52 82 56 88 66 C93 74 89 84 80 86 C72 88 64 83 60 73 C58 67 58 60 58 54 Z" 
+          fill="#66123F"/>
+    <!-- Golden Core Stamen Sparkle -->
+    <circle cx="50" cy="58" r="4.5" fill="#D4AF37"/>
+    <path d="M50 46 L51.5 54 L50 62 L48.5 54 Z" fill="#F4D374"/>
+    <path d="M42 58 L50 56.5 L58 58 L50 59.5 Z" fill="#F4D374"/>
+  </g>
+
+  <!-- Typography: CENTRE BEAUTY SOUAD -->
+  <g transform="translate(125, 24)">
+    <!-- Line 1: CENTRE -->
+    <text x="0" y="24" font-family="'Playfair Display', Georgia, serif" font-size="25" font-weight="700" letter-spacing="4" fill="#7A1A4E">
+      CENTRE
+    </text>
+    <!-- Line 2: BEAUTY SOUAD -->
+    <text x="0" y="52" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="800" letter-spacing="3.5" fill="#7A1A4E">
+      BEAUTY <tspan fill="#C59B27">SOUAD</tspan>
+    </text>
+    <!-- Subtitle: COIFFURE & ESTHÉTIQUE -->
+    <text x="2" y="74" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="600" letter-spacing="3.5" fill="#846F7C">
+      COIFFURE • ESTHÉTIQUE • CASABLANCA
+    </text>
+  </g>
+</svg>

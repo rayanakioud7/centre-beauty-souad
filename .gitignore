@@ -1,0 +1,14 @@
+# Dependency & logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local server (optional, can be kept or ignored)
+# server.js is useful for local preview
