@@ -14,9 +14,21 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://centre-beauty-souad.vercel.app/">
-  <meta property="og:title" content="Centre Beauty Souad | Salon de Coiffure & Beauté Casablanca">
+  <meta property="og:site_name" content="Centre Beauty Souad">
+  <meta property="og:locale" content="fr_MA">
+  <meta property="og:title" content="Centre Beauty Souad | Salon de Coiffure & Esthétique à Casablanca">
   <meta property="og:description" content="Découvrez nos offres exclusives : Soin Protéine à 300 DH avec masque offert, Blanchiment dentaire dès 70 DH, Épilation laser dès 100 DH et soins d'esthétique avancée.">
-  <meta property="og:image" content="assets/images/hero-salon.jpg">
+  <meta property="og:image" content="https://centre-beauty-souad.vercel.app/assets/images/hero-salon.jpg">
+  <meta property="og:image:alt" content="Intérieur du salon Centre Beauty Souad à Casablanca">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Centre Beauty Souad | Salon de Coiffure & Esthétique à Casablanca">
+  <meta name="twitter:description" content="Soin Protéine dès 300 DH, Blanchiment dentaire dès 70 DH, Épilation laser dès 100 DH et esthétique avancée à Casablanca.">
+  <meta name="twitter:image" content="https://centre-beauty-souad.vercel.app/assets/images/hero-salon.jpg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://centre-beauty-souad.vercel.app/">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
@@ -38,7 +50,8 @@
     "@context": "https://schema.org",
     "@type": "BeautySalon",
     "name": "Centre Beauty Souad",
-    "image": "assets/images/hero-salon.jpg",
+    "url": "https://centre-beauty-souad.vercel.app/",
+    "image": "https://centre-beauty-souad.vercel.app/assets/images/hero-salon.jpg",
     "telephone": "+212660647461",
     "address": {
       "@type": "PostalAddress",
@@ -83,7 +96,7 @@
       <nav class="desktop-nav" aria-label="Navigation principale">
         <ul class="nav-links">
           <li><a href="#accueil" class="nav-link active">Accueil</a></li>
-          <li><a href="#promos" class="nav-link highlight-nav"><i class="fa-solid fa-sparkles text-gold"></i> Nos Promos</a></li>
+          <li><a href="#promos" class="nav-link highlight-nav"><i class="fa-solid fa-wand-magic-sparkles text-gold"></i> Nos Promos</a></li>
           <li><a href="#services" class="nav-link">Prestations &amp; Tarifs</a></li>
           <li><a href="#avant-apres" class="nav-link">Avant / Après</a></li>
           <li><a href="#calculateur" class="nav-link">Devis Express</a></li>
@@ -240,7 +253,7 @@
       <div class="container">
         <div class="section-header text-center">
           <div class="section-subtitle">
-            <i class="fa-solid fa-sparkles text-gold"></i> OFFRES EXCLUSIVES &amp; PROMOS
+            <i class="fa-solid fa-wand-magic-sparkles text-gold"></i> OFFRES EXCLUSIVES &amp; PROMOS
           </div>
           <h2 class="section-title">Nos Bons Plans du Moment</h2>
           <p class="section-desc">
@@ -394,7 +407,7 @@
           <!-- Main Interactive Slider for Hair Protein -->
           <div class="comparison-card">
             <div class="comparison-badge"><i class="fa-solid fa-star text-gold"></i> Soin Protéine Cheveux (Avant / Après)</div>
-            <div class="comparison-slider" id="hairSliderContainer" tabindex="0" aria-label="Curseur de comparaison avant après pour soin protéine cheveux">
+            <div class="comparison-slider" id="hairSliderContainer" tabindex="0" role="slider" aria-label="Curseur de comparaison avant après pour soin protéine cheveux" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
               <!-- After Image (Background) -->
               <div class="slider-image-wrapper image-after">
                 <img src="assets/images/protein-after.jpg" alt="Cheveux lisses soyeux après soin protéine">
@@ -430,7 +443,7 @@
             <div class="result-tile">
               <div class="tile-img-box">
                 <img src="assets/images/teeth-whitening.jpg" alt="Résultat blanchiment des dents">
-                <div class="tile-badge"><i class="fa-solid fa-sparkles"></i> 3 Séances = 200 DH</div>
+                <div class="tile-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> 3 Séances = 200 DH</div>
               </div>
               <div class="tile-content">
                 <h4>Blanchiment des Dents</h4>
@@ -498,12 +511,15 @@
 
           <!-- 1. Soin Protéine Cheveux -->
           <div class="service-item-card" data-category="promo coiffure" data-name="soin proteine cheveux lissage">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/protein-after.jpg" alt="Soin protéine cheveux lissant en institut" loading="lazy" width="1200" height="896">
               <span class="service-tag tag-promo"><i class="fa-solid fa-gift"></i> Promo + Cadeau</span>
               <div class="service-price">300 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Soin Protéine Cheveux</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Soin Protéine Cheveux</h3>
             <p class="service-item-desc">Traitement lissant et nourrissant en profondeur. Offre spéciale : <strong>Petit Shampoing &amp; Masque OFFERTS !</strong> (PKC Ultimate Protein).</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 2h30</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Soin Protéine Cheveux (300 DH)">
@@ -514,12 +530,15 @@
 
           <!-- 2. Blanchiment des Dents (3 séances) -->
           <div class="service-item-card" data-category="promo dentaire-laser" data-name="blanchiment des dents 3 seances pack sourire">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/teeth-whitening.jpg" alt="Sourire blanc après blanchiment dentaire" loading="lazy" width="1200" height="896">
               <span class="service-tag tag-exclusive"><i class="fa-solid fa-bolt"></i> Pack Exclusif</span>
               <div class="service-price">200 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Blanchiment des Dents (3 Séances)</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Blanchiment des Dents (3 Séances)</h3>
             <p class="service-item-desc">Pack complet 3 séances pour un sourire blanc éclatant et naturel. Éclaircissement doux sans sensibilité.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> 3 Séances</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Blanchiment des Dents 3 Séances (200 DH)">
@@ -530,12 +549,15 @@
 
           <!-- 3. Blanchiment des Dents (1 séance) -->
           <div class="service-item-card" data-category="dentaire-laser" data-name="blanchiment des dents 1 seance flash">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/blanchiment-1-seance.jpg" alt="Sourire éclatant après une séance de blanchiment" loading="lazy" width="960" height="640">
               <span class="service-tag">Découverte</span>
               <div class="service-price">70 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Blanchiment des Dents (1 Séance)</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Blanchiment des Dents (1 Séance)</h3>
             <p class="service-item-desc">Séance unitaire pour rafraîchir l'éclat de votre émail et éliminer les colorations du café ou thé.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 30 min</span>
               <button class="btn btn-sm btn-outline open-booking-btn" data-service="Blanchiment des Dents 1 Séance (70 DH)">
@@ -546,12 +568,15 @@
 
           <!-- 4. Épilation Laser - Visage & Aisselles -->
           <div class="service-item-card" data-category="promo dentaire-laser" data-name="epilation laser visage aisselles definitive">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/laser-treatment.jpg" alt="Épilation laser diode visage et aisselles" loading="lazy" width="1200" height="896">
               <span class="service-tag tag-promo">Promo Laser</span>
               <div class="service-price">100 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Épilation Laser (Visage &amp; Aisselles)</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Épilation Laser (Visage &amp; Aisselles)</h3>
             <p class="service-item-desc">Technologie diode indolore pour une peau nette et douce, sans poils incarnés ni irritations.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 20 min</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Épilation Laser Visage & Aisselles (100 DH)">
@@ -562,12 +587,15 @@
 
           <!-- 5. Épilation Laser - Tout le Corps -->
           <div class="service-item-card" data-category="promo dentaire-laser" data-name="epilation laser corps complet tout le corps">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/laser-corps.jpg" alt="Épilation laser corps complet, peau douce et nette" loading="lazy" width="960" height="640">
               <span class="service-tag tag-exclusive">Corps Complet</span>
               <div class="service-price">900 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Épilation Laser (Tout le Corps)</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Épilation Laser (Tout le Corps)</h3>
             <p class="service-item-desc">Séance intégrale pour l'ensemble du corps avec machine diode de pointe et refroidissement cutané optimal.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h15</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Épilation Laser Tout le Corps (900 DH)">
@@ -578,12 +606,15 @@
 
           <!-- 6. Microblading -->
           <div class="service-item-card" data-category="esthetique" data-name="microblading sourcils poil a poil pigmentation">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/microblading.jpg" alt="Microblading des sourcils poil à poil" loading="lazy" width="1200" height="896">
               <span class="service-tag">Dermopigmentation</span>
               <div class="service-price">250 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Microblading Sourcils</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Microblading Sourcils</h3>
             <p class="service-item-desc">Technique poil à poil hyperréaliste pour redessiner et densifier la ligne de vos sourcils harmonieusement.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h30</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Microblading Sourcils (250 DH)">
@@ -594,12 +625,15 @@
 
           <!-- 7. Microneedling -->
           <div class="service-item-card" data-category="esthetique" data-name="microneedling soin visage collagene cicatrices pores">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/facial-treatment.jpg" alt="Soin microneedling du visage en institut" loading="lazy" width="1200" height="896">
               <span class="service-tag">Soin Régénérant</span>
               <div class="service-price">300 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Microneedling Visage</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Microneedling Visage</h3>
             <p class="service-item-desc">Stimule le collagène, estompe les taches pigmentaires, resserre les pores et affine le grain de peau.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h00</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Microneedling Visage (300 DH)">
@@ -610,12 +644,15 @@
 
           <!-- 8. BB Glow -->
           <div class="service-item-card" data-category="esthetique" data-name="bb glow teint parfait eclat fond de teint semi permanent">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/bb-glow.jpg" alt="Application d'un sérum éclat BB Glow" loading="lazy" width="960" height="640">
               <span class="service-tag">Effet Filtre</span>
               <div class="service-price">300 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">BB Glow Teint Éclatant</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">BB Glow Teint Éclatant</h3>
             <p class="service-item-desc">Unifie le teint, illumine la peau et camoufle les rougeurs et cernes pour un effet "fond de teint naturel" durable.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h00</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="BB Glow (300 DH)">
@@ -626,12 +663,15 @@
 
           <!-- 9. Plasma Pen -->
           <div class="service-item-card" data-category="esthetique" data-name="plasma pen lifting paupieres rides ridules">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/plasma-pen.jpg" alt="Soin de la peau du visage au sérum" loading="lazy" width="960" height="640">
               <span class="service-tag">Lifting Sans Chirurgie</span>
               <div class="service-price">400 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Plasma Pen</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Plasma Pen</h3>
             <p class="service-item-desc">Lifting non chirurgical des paupières, réduction des rides d'expression et raffermissement cutané ciblé.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 45 min</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Plasma Pen (400 DH)">
@@ -642,12 +682,15 @@
 
           <!-- 10. Mèches -->
           <div class="service-item-card" data-category="coiffure" data-name="meches balayage blond cheveux lumiere">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/meches-balayage.jpg" alt="Cheveux blonds avec balayage lumineux" loading="lazy" width="960" height="640">
               <span class="service-tag">Colorimétrie</span>
               <div class="service-price">130 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Mèches &amp; Balayage</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Mèches &amp; Balayage</h3>
             <p class="service-item-desc">Nuances subtiles et reflets lumineux pour apporter dimension, relief et brillance à vos cheveux.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h45</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Mèches & Balayage (130 DH)">
@@ -658,12 +701,15 @@
 
           <!-- 11. Coloration Cheveux -->
           <div class="service-item-card" data-category="coiffure" data-name="coloration cheveux teinture racines">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/coloration.jpg" alt="Coloration et brushing des cheveux en salon" loading="lazy" width="960" height="641">
               <span class="service-tag">Coiffure</span>
               <div class="service-price">130 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Coloration Cheveux</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Coloration Cheveux</h3>
             <p class="service-item-desc">Couverture parfaite des cheveux blancs et reflets intenses avec des produits respectueux de la fibre capillaire.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h15</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Coloration Cheveux (130 DH)">
@@ -674,12 +720,15 @@
 
           <!-- 12. Soin des Cheveux -->
           <div class="service-item-card" data-category="coiffure" data-name="soin des cheveux botox capillaire masque nutrition">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/soin-cheveux.jpg" alt="Soin profond et nutrition des cheveux" loading="lazy" width="960" height="640">
               <span class="service-tag">Nutrition Capillaire</span>
               <div class="service-price">100 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Soin des Cheveux Profond</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Soin des Cheveux Profond</h3>
             <p class="service-item-desc">Masque régénérant haute nutrition pour réparer les longueurs cassantes et redonner de la vitalité.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 45 min</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Soin des Cheveux (100 DH)">
@@ -690,12 +739,15 @@
 
           <!-- 13. Cils Permanent -->
           <div class="service-item-card" data-category="esthetique" data-name="cils permanent rehaussement teinture regard">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/cils-permanent.jpg" alt="Regard sublimé par un rehaussement de cils" loading="lazy" width="960" height="540">
               <span class="service-tag">Regard</span>
               <div class="service-price">100 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Cils Permanent / Rehaussement</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Cils Permanent / Rehaussement</h3>
             <p class="service-item-desc">Courbe sublime et regard intensifié sans mascara pendant plusieurs semaines.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 45 min</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Cils Permanent (100 DH)">
@@ -706,12 +758,15 @@
 
           <!-- 14. Acrochordon -->
           <div class="service-item-card" data-category="esthetique" data-name="acrochordon tetine retrait peau grain de beaute">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/acrochordon.jpg" alt="Soin de la peau avec une crème hydratante" loading="lazy" width="960" height="640">
               <span class="service-tag">Dermo-Esthétique</span>
               <div class="service-price">100 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Acrochordon (Retrait)</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Acrochordon (Retrait)</h3>
             <p class="service-item-desc">Élimination rapide, propre et stérile des petites excroissances cutanées (tétines de peau).</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 20 min</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Retrait Acrochordon (100 DH)">
@@ -722,12 +777,15 @@
 
           <!-- 15. Lifting Visage / Sourcils -->
           <div class="service-item-card" data-category="esthetique" data-name="lifting sourcils visage mini lift">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/lifting-express.jpg" alt="Visage lumineux après un soin liftant" loading="lazy" width="960" height="640">
               <span class="service-tag">Tenseur</span>
               <div class="service-price">50 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Lifting Express</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Lifting Express</h3>
             <p class="service-item-desc">Mini lift tenseur pour ouvrir le regard et redéfinir les pommettes avant une occasion spéciale.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 25 min</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Lifting Express (50 DH)">
@@ -738,12 +796,15 @@
 
           <!-- 16. Chignon & Coiffure Événementielle -->
           <div class="service-item-card" data-category="coiffure" data-name="chignon coiffure mariee soiree fete brushing">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/coiffure-evenement.jpg" alt="Coiffure de soirée ondulée et glamour" loading="lazy" width="960" height="640">
               <span class="service-tag">Événement &amp; Mariage</span>
               <div class="service-price"><small>Sur</small> Devis</div>
             </div>
-            <h3 class="service-item-title">Chignon &amp; Coiffure Mariée / Soirée</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Chignon &amp; Coiffure Mariée / Soirée</h3>
             <p class="service-item-desc">Créations personnalisées de chignons artistiques, tresses bohèmes et coiffures royales pour fêtes.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> Sur RDV</span>
               <button class="btn btn-sm btn-outline open-booking-btn" data-service="Chignon & Coiffure Événementielle (Sur Devis)">
@@ -754,28 +815,34 @@
 
           <!-- 17. Shadow Brows -->
           <div class="service-item-card" data-category="esthetique" data-name="shadow brows sourcils poudres ombrage">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/microblading.jpg" alt="Dessin des sourcils effet poudré Shadow Brows" loading="lazy" width="1200" height="896">
               <span class="service-tag">Dermopigmentation</span>
               <div class="service-price"><small>Sur</small> Consultation</div>
             </div>
-            <h3 class="service-item-title">Shadow Brows (Effet Poudré)</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Shadow Brows (Effet Poudré)</h3>
             <p class="service-item-desc">Ombrage doux dégradé pour un effet maquillage soigné et sophistiqué du matin au soir.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> Sur RDV</span>
               <button class="btn btn-sm btn-outline open-booking-btn" data-service="Shadow Brows Sourcils">
-                <i class="fa-brands fa-whatsapp"></i> Réserver
+                <i class="fa-brands fa-whatsapp"></i> Consulter
               </button>
             </div>
           </div>
 
           <!-- 18. Mésothérapie -->
           <div class="service-item-card" data-category="esthetique" data-name="mesotherapie vitamines peau visage cuir chevelu">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/mesotherapie.jpg" alt="Sérum de soin vitalisant pour la peau" loading="lazy" width="960" height="640">
               <span class="service-tag">Revitalisation</span>
               <div class="service-price"><small>Sur</small> Consultation</div>
             </div>
-            <h3 class="service-item-title">Mésothérapie (Visage &amp; Cuir Chevelu)</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Mésothérapie (Visage &amp; Cuir Chevelu)</h3>
             <p class="service-item-desc">Infusion de cocktails d'acide hyaluronique et vitamines pour freiner la chute et repulper la peau.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> Sur RDV</span>
               <button class="btn btn-sm btn-outline open-booking-btn" data-service="Mésothérapie Visage / Cheveux">
@@ -786,12 +853,15 @@
 
           <!-- 19. Détatouage -->
           <div class="service-item-card" data-category="esthetique" data-name="detatouage sourcils effacement maquillage permanent">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/detatouage.jpg" alt="Soin apaisant de la peau en institut" loading="lazy" width="960" height="640">
               <span class="service-tag">Correction</span>
               <div class="service-price"><small>Sur</small> Consultation</div>
             </div>
-            <h3 class="service-item-title">Détatouage &amp; Correction</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Détatouage &amp; Correction</h3>
             <p class="service-item-desc">Effacement progressif et sécurisé des anciens tatouages ou microblading mal pigmentés.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> Sur RDV</span>
               <button class="btn btn-sm btn-outline open-booking-btn" data-service="Détatouage & Correction">
@@ -802,12 +872,15 @@
 
           <!-- 20. Soin du Visage Hydratant & Nettoyant -->
           <div class="service-item-card" data-category="esthetique" data-name="soin du visage hydrafacial nettoyage profond points noirs">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/soin-visage.jpg" alt="Soin du visage purifiant et éclat" loading="lazy" width="960" height="640">
               <span class="service-tag">Soin Signature</span>
               <div class="service-price"><small>Dès</small> 150 <span class="currency">DH</span></div>
             </div>
-            <h3 class="service-item-title">Soin du Visage Purifiant &amp; Éclat</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Soin du Visage Purifiant &amp; Éclat</h3>
             <p class="service-item-desc">Nettoyage profond, extraction des impuretés, gommage doux et masque hydratant revitalisant.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h00</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Soin du Visage Purifiant & Éclat">
@@ -818,12 +891,15 @@
 
           <!-- 21. Manucure - Pédicure -->
           <div class="service-item-card" data-category="onglerie" data-name="manucure pedicure mains pieds cuticules beauté">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/manicure-spa.jpg" alt="Manucure soignée aux ongles nudes" loading="lazy" width="960" height="640">
               <span class="service-tag">Onglerie</span>
               <div class="service-price"><small>Sur</small> RDV</div>
             </div>
-            <h3 class="service-item-title">Manucure &amp; Pédicure Spa</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Manucure &amp; Pédicure Spa</h3>
             <p class="service-item-desc">Traitement complet des cuticules, limage soigné, gommage et massage hydratant relaxant des mains et pieds.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 50 min</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Manucure & Pédicure Spa">
@@ -834,12 +910,15 @@
 
           <!-- 22. Pose Gel & Nail Art -->
           <div class="service-item-card" data-category="onglerie" data-name="pose gel capsules chablon semi permanent nail art vernis">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/manicure.jpg" alt="Pose de gel et vernis semi-permanent" loading="lazy" width="1200" height="896">
               <span class="service-tag">Ongles en Gel</span>
               <div class="service-price"><small>Sur</small> RDV</div>
             </div>
-            <h3 class="service-item-title">Pose Gel &amp; Vernis Semi-Permanent</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Pose Gel &amp; Vernis Semi-Permanent</h3>
             <p class="service-item-desc">Extension sur capsules ou chablon, gainage renforçateur, finition brillante ou mate et décors sur-mesure.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h15</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Pose Gel & Semi-Permanent">
@@ -850,12 +929,15 @@
 
           <!-- 23. Épilation à la Cire -->
           <div class="service-item-card" data-category="onglerie" data-name="epilation cire orientale traditionnelle jambes maillot bras sourcils">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/epilation-cire.jpg" alt="Ambiance spa pour une épilation à la cire" loading="lazy" width="960" height="641">
               <span class="service-tag">Épilation Douce</span>
               <div class="service-price"><small>Sur</small> RDV</div>
             </div>
-            <h3 class="service-item-title">Épilation Cire Traditionnelle</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Épilation Cire Traditionnelle</h3>
             <p class="service-item-desc">Cire tiède ou chaude hypoallergénique pour jambes complètes, bras, maillot et sourcils sans irritation.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> Sur mesure</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Épilation Cire Traditionnelle">
@@ -866,12 +948,15 @@
 
           <!-- 24. Massage Relaxant -->
           <div class="service-item-card" data-category="onglerie" data-name="massage relaxant anti stress amincissant dos corps">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/massage.jpg" alt="Massage relaxant et bien-être aux huiles" loading="lazy" width="960" height="640">
               <span class="service-tag">Bien-Être</span>
               <div class="service-price"><small>Sur</small> RDV</div>
             </div>
-            <h3 class="service-item-title">Massage Relaxant &amp; Détox</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Massage Relaxant &amp; Détox</h3>
             <p class="service-item-desc">Détente musculaire aux huiles précieuses pour relâcher les tensions, améliorer la circulation et déstresser.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 45-60 min</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Massage Relaxant & Détox">
@@ -882,12 +967,15 @@
 
           <!-- 25. Makeup Artist -->
           <div class="service-item-card" data-category="onglerie" data-name="makeup artist maquillage mariee fete soiree shooting invitee">
-            <div class="service-card-top">
+            <div class="service-media">
+              <img src="assets/images/services/makeup-artist.jpg" alt="Kit de maquillage professionnel" loading="lazy" width="960" height="640">
               <span class="service-tag">Maquillage Pro</span>
               <div class="service-price"><small>Sur</small> RDV</div>
             </div>
-            <h3 class="service-item-title">Makeup Artist Professionnel</h3>
+            <div class="service-body">
+              <h3 class="service-item-title">Makeup Artist Professionnel</h3>
             <p class="service-item-desc">Mise en beauté sophistiquée, contouring, smoky eyes ou look nude lumineux adapté à vos événements et mariages.</p>
+            </div>
             <div class="service-card-bottom">
               <span class="service-duration"><i class="fa-regular fa-clock"></i> ~ 1h00</span>
               <button class="btn btn-sm btn-primary open-booking-btn" data-service="Makeup Artist Professionnel">
@@ -986,7 +1074,7 @@
                 <span class="checkbox-custom"></span>
                 <div class="card-details">
                   <strong>Mèches / Balayage Cheveux</strong>
-                  <span class="desc">Reflets et reflets éclatants</span>
+                  <span class="desc">Reflets et éclat lumineux</span>
                 </div>
                 <div class="card-price">130 DH</div>
               </label>
@@ -1329,6 +1417,7 @@
             Centre de coiffure, dermocosmétique et d'esthétique avancée à Casablanca. Des prestations haut de gamme, des offres accessibles et une équipe dévouée à votre éclat.
           </p>
           <div class="footer-socials">
+            <!-- TODO: remplacer par les URL réelles des profils du salon (Instagram, Facebook, TikTok) -->
             <a href="https://wa.me/212660647461" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>

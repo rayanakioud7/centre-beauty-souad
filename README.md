@@ -53,3 +53,30 @@ node server.js
 ```
 Ouvrez ensuite votre navigateur sur :
 [http://localhost:5050/](http://localhost:5050/)
+
+---
+
+## 🖼️ Crédits Photos & Licences
+
+Toutes les photos du site sont **libres de droits** (usage commercial autorisé, aucune redevance).
+
+- **Visuels du salon** (`assets/images/`) : photos fournies par le salon (hero-salon, logo, favicon, soins protéine, blanchiment, laser, microblading, visage, manucure).
+- **Visuels de prestations** (`assets/images/services/`) : photographies **CC0 / Domaine Public** issues de [StockSnap.io](https://stocksnap.io/), redimensionnées pour le web (960 px de large).
+
+| Fichiers | Source / Licence |
+| --- | --- |
+| meches-balayage.jpg, coloration.jpg, soin-cheveux.jpg, coiffure-evenement.jpg | StockSnap.io — CC0 |
+| bb-glow.jpg, plasma-pen.jpg, soin-visage.jpg, acrochordon.jpg, detatouage.jpg, lifting-express.jpg | StockSnap.io — CC0 |
+| mesotherapie.jpg, epilation-cire.jpg, massage.jpg, manicure-spa.jpg, makeup-artist.jpg, cils-permanent.jpg, blanchiment-1-seance.jpg, laser-corps.jpg | StockSnap.io — CC0 |
+
+> La licence CC0 ne requiert aucune attribution ; la source est documentée ici par transparence.
+
+---
+
+## 🧩 Notes techniques
+
+- **Catalogue de 25 prestations** : chaque carte affiche un visuel, un badge de catégorie et le prix, avec filtres et recherche instantanée (le filtre masque les cartes via `data-category` / `data-name`).
+- **Accessibilité** : le curseur Avant/Après se pilote au clavier (← →, Début/Fin) avec attributs ARIA ; la modale de réservation et le menu mobile se ferment avec `Échap`.
+- **Sécurité** : le serveur de prévisualisation (`server.js`) bloque toute tentative de traversée de répertoire (`path traversal`).
+- **SEO** : balises Open Graph / Twitter complètes, image absolue et données structurées `BeautySalon` (JSON-LD).
+- **À personnaliser** : remplacer les URL des réseaux sociaux dans le pied de page (`index.html`, section `.footer-socials`) par les vrais profils Instagram / Facebook / TikTok du salon.

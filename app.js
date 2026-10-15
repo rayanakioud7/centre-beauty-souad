@@ -58,15 +58,20 @@ document.addEventListener('DOMContentLoaded', () => {
   if (sliderContainer && beforeWrapper && sliderDivider) {
     let isSliding = false;
 
+    function setSliderPercent(percentage) {
+      const clamped = Math.max(0, Math.min(100, percentage));
+      beforeWrapper.style.width = `${clamped}%`;
+      sliderDivider.style.left = `${clamped}%`;
+      sliderContainer.setAttribute('aria-valuenow', String(Math.round(clamped)));
+    }
+
     function updateSlider(clientX) {
       const rect = sliderContainer.getBoundingClientRect();
+      if (!rect.width) return;
       let offsetX = clientX - rect.left;
       if (offsetX < 0) offsetX = 0;
       if (offsetX > rect.width) offsetX = rect.width;
-
-      const percentage = (offsetX / rect.width) * 100;
-      beforeWrapper.style.width = `${percentage}%`;
-      sliderDivider.style.left = `${percentage}%`;
+      setSliderPercent((offsetX / rect.width) * 100);
     }
 
     // Mouse events
@@ -98,6 +103,25 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('touchend', () => {
       isSliding = false;
     });
+
+    // Keyboard support (accessibility)
+    sliderContainer.addEventListener('keydown', (e) => {
+      const current = parseFloat(beforeWrapper.style.width) || 50;
+      const step = 5;
+      let next;
+      switch (e.key) {
+        case 'ArrowLeft': case 'ArrowDown': next = current - step; break;
+        case 'ArrowRight': case 'ArrowUp': next = current + step; break;
+        case 'Home': next = 0; break;
+        case 'End': next = 100; break;
+        default: return;
+      }
+      e.preventDefault();
+      setSliderPercent(next);
+    });
+
+    // Initialize position + ARIA state
+    setSliderPercent(parseFloat(beforeWrapper.style.width) || 50);
   }
 
   // ==========================================
@@ -291,25 +315,46 @@ document.addEventListener('DOMContentLoaded', () => {
     return preview;
   }
 
+  function normalizeLabel(value) {
+    return (value || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function selectServiceOption(service) {
+    if (!bookService || !service) return;
+
+    // Remove any previously injected custom options so the list never grows.
+    Array.from(bookService.options).forEach(opt => {
+      if (opt.dataset.custom === 'true') opt.remove();
+    });
+
+    const target = normalizeLabel(service);
+    let index = Array.from(bookService.options).findIndex(o => o.value === service);
+
+    if (index === -1) {
+      index = Array.from(bookService.options).findIndex(o => {
+        const value = normalizeLabel(o.value);
+        return value === target || value.includes(target) || target.includes(value);
+      });
+    }
+
+    if (index === -1) {
+      const opt = new Option(service, service, true, true);
+      opt.dataset.custom = 'true';
+      bookService.add(opt);
+      index = bookService.options.length - 1;
+    }
+
+    bookService.selectedIndex = index;
+  }
+
   function openBookingModal(preselectedService = null) {
     if (modalOverlay) {
-      if (preselectedService && bookService) {
-        // Try to match or find close option
-        let matched = false;
-        for (let i = 0; i < bookService.options.length; i++) {
-          if (bookService.options[i].value.toLowerCase().includes(preselectedService.toLowerCase()) ||
-              preselectedService.toLowerCase().includes(bookService.options[i].value.toLowerCase())) {
-            bookService.selectedIndex = i;
-            matched = true;
-            break;
-          }
-        }
-        if (!matched) {
-          // If not in the list, set custom
-          const opt = new Option(preselectedService, preselectedService, true, true);
-          bookService.add(opt);
-        }
-      }
+      if (preselectedService) selectServiceOption(preselectedService);
       updateWhatsAppPreview();
       modalOverlay.classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -338,6 +383,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === modalOverlay) closeBookingModal();
     });
   }
+
+  // Close modal / drawer with Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    if (modalOverlay && modalOverlay.classList.contains('active')) closeBookingModal();
+    if (mobileDrawer && mobileDrawer.classList.contains('open')) closeDrawer();
+  });
 
   // Update preview on inputs
   [bookService, clientName, clientPhone, bookDate, bookTime, bookNotes].forEach(element => {
