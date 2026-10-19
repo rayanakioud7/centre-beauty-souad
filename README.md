@@ -8,13 +8,18 @@ Site web vitrine haut de gamme pour le salon de coiffure, beauté et centre esth
 
 1. **Identité Visuelle Chic & Élégante** : Palette personnalisée « Plum & Rose Gold » inspirée du logo et des affiches du salon, typographie moderne et soignée, design 100% responsive (mobile, tablette, desktop).
 2. **Promos Exclusives Mises en Avant** :
+   - **Traitement des Cicatrices (Dès 200 DH)** : Soin phare mis en avant en tête de la section promos et sur la page d'accueil.
+   - **Tricopigmentation** : Dermopigmentation capillaire sur devis, avec visuel avant / après.
+   - **Glaçage Cheveux** : 250 DH la séance, brillance miroir.
+   - **Microblading Sourcils** : 250 DH la séance.
+   - **Acrochordon** : Retrait de tétines de peau à 100 DH, avec photo réelle.
    - **Soin Protéine Cheveux (Dès 300 DH)** : Avec petit shampoing & masque PKC Ultimate Protein offerts.
    - **Blanchiment des Dents** : 3 séances à 200 DH (ou 1 séance à 70 DH).
    - **Épilation Laser** : Dès 100 DH (Visage & Aisselles) / Tout le corps à 900 DH.
 3. **Curseur Interactif Avant / Après** : Comparateur visuel interactif en direct (cheveux avant/après soin protéine).
 4. **Catalogue Complet des Prestations avec Filtres & Recherche en Direct** :
-   - Coiffure & Soins (Protéine, Mèches, Coloration, Soin profond, Chignon).
-   - Esthétique Avancée (Microblading, Microneedling, BB Glow, Plasma Pen, Acrochordon, Lifting, Cils permanent, Mésothérapie, Détatouage).
+   - Coiffure & Soins (Protéine, Glaçage, Mèches, Coloration, Soin profond, Chignon).
+   - Esthétique Avancée (Traitement des Cicatrices, Tricopigmentation, Microblading, Microneedling, BB Glow, Plasma Pen, Acrochordon, Lifting, Cils permanent, Mésothérapie, Détatouage).
    - Onglerie & Bien-Être (Manucure-Pédicure Spa, Pose gel, Épilation cire, Massage, Makeup Artist).
 5. **Simulateur de Devis & Calculateur de Pack Interactif** : Les clientes peuvent cocher leurs prestations préférées, voir le total instantané en DH, et réserver leur pack personnalisé directement sur WhatsApp.
 6. **Formulaire de Réservation Direct WhatsApp** :
@@ -24,6 +29,7 @@ Site web vitrine haut de gamme pour le salon de coiffure, beauté et centre esth
 7. **Bouton WhatsApp Flottant** : Toujours accessible avec animation d'attention.
 8. **Localisation & Horaires** : Al Azhar, Casablanca, ouvert 7j/7 de 10h00 à 20h00 avec intégration Google Maps.
 9. **Avis Clientes & Foire Aux Questions (FAQ Accordéon)**.
+10. **Réseaux Sociaux** : Instagram officiel du salon — [@centerbeautysouad](https://instagram.com/centerbeautysouad) — lié depuis le pied de page et la section contact.
 
 ---
 
@@ -58,25 +64,30 @@ Ouvrez ensuite votre navigateur sur :
 
 ## 🖼️ Crédits Photos & Licences
 
-Toutes les photos du site sont **libres de droits** (usage commercial autorisé, aucune redevance).
+Le site utilise un mélange de visuels fournis par le salon, de photos CC0 et de photos sous licences Creative Commons (avec attribution). La page [credits.html](credits.html) reprend les crédits des images ajoutées pour les nouvelles prestations.
 
 - **Visuels du salon** (`assets/images/`) : photos fournies par le salon (hero-salon, logo, favicon, soins protéine, blanchiment, laser, microblading, visage, manucure).
-- **Visuels de prestations** (`assets/images/services/`) : photographies **CC0 / Domaine Public** issues de [StockSnap.io](https://stocksnap.io/), redimensionnées pour le web (960 px de large).
+- **Nouvelles prestations** : cicatrice, tricopigmentation, glaçage et acrochordon — visuels sous licences CC BY / CC BY-SA via Wikimedia Commons (voir `credits.html`).
+- **Autres visuels de prestations** (`assets/images/services/`) : photographies **CC0 / Domaine Public** issues de [StockSnap.io](https://stocksnap.io/), redimensionnées pour le web (960 px de large).
 
 | Fichiers | Source / Licence |
 | --- | --- |
+| cicatrice-treatment.jpg, services/cicatrice.jpg | BalikianFacialPlasticSurgery — CC BY 4.0 (Wikimedia Commons) |
+| tricopigmentation.jpg, tricopigmentation-avant-apres.jpg, services/tricopigmentation.jpg | SMPWIKI101 — CC BY-SA 4.0 (Wikimedia Commons) |
+| services/acrochordon.jpg | Jmarchn — CC BY-SA 3.0 (Wikimedia Commons) |
+| glacage-cheveux.jpg, services/glacage-cheveux.jpg | geehairimages — CC BY 2.0 (Wikimedia Commons / Flickr) |
 | meches-balayage.jpg, coloration.jpg, soin-cheveux.jpg, coiffure-evenement.jpg | StockSnap.io — CC0 |
-| bb-glow.jpg, plasma-pen.jpg, soin-visage.jpg, acrochordon.jpg, detatouage.jpg, lifting-express.jpg | StockSnap.io — CC0 |
+| bb-glow.jpg, plasma-pen.jpg, soin-visage.jpg, detatouage.jpg, lifting-express.jpg | StockSnap.io — CC0 |
 | mesotherapie.jpg, epilation-cire.jpg, massage.jpg, manicure-spa.jpg, makeup-artist.jpg, cils-permanent.jpg, blanchiment-1-seance.jpg, laser-corps.jpg | StockSnap.io — CC0 |
 
-> La licence CC0 ne requiert aucune attribution ; la source est documentée ici par transparence.
+> Les images CC0 ne requièrent aucune attribution ; les images CC BY / CC BY-SA sont créditées dans `credits.html` et conservent leurs licences d'origine (versions recadrées et redimensionnées pour le web).
 
 ---
 
 ## 🧩 Notes techniques
 
-- **Catalogue de 25 prestations** : chaque carte affiche un visuel, un badge de catégorie et le prix, avec filtres et recherche instantanée (le filtre masque les cartes via `data-category` / `data-name`).
+- **Catalogue de 28 prestations** : chaque carte affiche un visuel, un badge de catégorie et le prix, avec filtres et recherche instantanée (le filtre masque les cartes via `data-category` / `data-name`).
 - **Accessibilité** : le curseur Avant/Après se pilote au clavier (← →, Début/Fin) avec attributs ARIA ; la modale de réservation et le menu mobile se ferment avec `Échap`.
 - **Sécurité** : le serveur de prévisualisation (`server.js`) bloque toute tentative de traversée de répertoire (`path traversal`).
 - **SEO** : balises Open Graph / Twitter complètes, image absolue et données structurées `BeautySalon` (JSON-LD).
-- **À personnaliser** : remplacer les URL des réseaux sociaux dans le pied de page (`index.html`, section `.footer-socials`) par les vrais profils Instagram / Facebook / TikTok du salon.
+- **Réseaux sociaux** : l'Instagram officiel est déjà configuré (`https://instagram.com/centerbeautysouad`) dans le pied de page et la section contact. Les URL Facebook et TikTok restent à remplacer par les vrais profils du salon si besoin (`index.html`, section `.footer-socials`).
