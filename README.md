@@ -12,7 +12,7 @@ Site web vitrine haut de gamme pour le salon de coiffure, beauté et centre esth
    - **Tricopigmentation** : Dermopigmentation capillaire sur devis, avec visuel avant / après.
    - **Glaçage Cheveux** : 250 DH la séance, brillance miroir.
    - **Microblading Sourcils** : 250 DH la séance.
-   - **Acrochordon** : Retrait de tétines de peau à 100 DH, avec photo réelle.
+   - **Acrochordon** : Retrait de tétines de peau à 50 DH la pièce, avec photo réelle fournie par le salon.
    - **Soin Protéine Cheveux (Dès 300 DH)** : Avec petit shampoing & masque PKC Ultimate Protein offerts.
    - **Blanchiment des Dents** : 3 séances à 200 DH (ou 1 séance à 70 DH).
    - **Épilation Laser** : Dès 100 DH (Visage & Aisselles) / Tout le corps à 900 DH.
@@ -67,20 +67,21 @@ Ouvrez ensuite votre navigateur sur :
 Le site utilise un mélange de visuels fournis par le salon, de photos CC0 et de photos sous licences Creative Commons (avec attribution). La page [credits.html](credits.html) reprend les crédits des images ajoutées pour les nouvelles prestations.
 
 - **Visuels du salon** (`assets/images/`) : photos fournies par le salon (hero-salon, logo, favicon, soins protéine, blanchiment, laser, microblading, visage, manucure).
-- **Nouvelles prestations** : cicatrice, tricopigmentation, glaçage et acrochordon — visuels sous licences CC BY / CC BY-SA via Wikimedia Commons (voir `credits.html`).
+- **Photos fournies par le salon** : le visuel avant/après du traitement des cicatrices et la photo réelle d'acrochordons sont des images fournies par le centre.
+- **Images sous licence Creative Commons** : la tricopigmentation et le glaçage utilisent des visuels CC BY / CC BY-SA via Wikimedia Commons (voir `credits.html`).
 - **Autres visuels de prestations** (`assets/images/services/`) : photographies **CC0 / Domaine Public** issues de [StockSnap.io](https://stocksnap.io/), redimensionnées pour le web (960 px de large).
 
 | Fichiers | Source / Licence |
 | --- | --- |
-| cicatrice-treatment.jpg, services/cicatrice.jpg | BalikianFacialPlasticSurgery — CC BY 4.0 (Wikimedia Commons) |
+| cicatrice-treatment.jpg, services/cicatrice.jpg | Photo avant / après fournie par le salon |
 | tricopigmentation.jpg, tricopigmentation-avant-apres.jpg, services/tricopigmentation.jpg | SMPWIKI101 — CC BY-SA 4.0 (Wikimedia Commons) |
-| services/acrochordon.jpg | Jmarchn — CC BY-SA 3.0 (Wikimedia Commons) |
+| services/acrochordon.jpg | Photo réelle fournie par le salon |
 | glacage-cheveux.jpg, services/glacage-cheveux.jpg | geehairimages — CC BY 2.0 (Wikimedia Commons / Flickr) |
 | meches-balayage.jpg, coloration.jpg, soin-cheveux.jpg, coiffure-evenement.jpg | StockSnap.io — CC0 |
 | bb-glow.jpg, plasma-pen.jpg, soin-visage.jpg, detatouage.jpg, lifting-express.jpg | StockSnap.io — CC0 |
 | mesotherapie.jpg, epilation-cire.jpg, massage.jpg, manicure-spa.jpg, makeup-artist.jpg, cils-permanent.jpg, blanchiment-1-seance.jpg, laser-corps.jpg | StockSnap.io — CC0 |
 
-> Les images CC0 ne requièrent aucune attribution ; les images CC BY / CC BY-SA sont créditées dans `credits.html` et conservent leurs licences d'origine (versions recadrées et redimensionnées pour le web).
+> Les images CC0 ne requièrent aucune attribution ; les images CC BY / CC BY-SA sont créditées dans `credits.html` et conservent leurs licences d'origine (versions recadrées et redimensionnées pour le web). Les photos fournies par le salon restent la propriété du centre.
 
 ---
 
